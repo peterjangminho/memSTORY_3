@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MemSTORY" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <item name="colorPrimary">@color/pastel_blue</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorPrimaryContainer">@color/pastel_blue_light</item>
-        <item name="colorOnPrimaryContainer">@color/dark_blue</item>
+    <style name="Base.Theme.MemSTORY" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">@color/pastel_blue</item>
+        <item name="android:colorPrimaryDark">@color/dark_blue</item>
+        <item name="android:colorAccent">@color/pastel_blue</item>
         <item name="android:colorBackground">@color/white</item>
-        <item name="colorOnBackground">@color/dark_gray</item>
+        <item name="android:textColorPrimary">@color/dark_gray</item>
     </style>
 
     <style name="Theme.MemSTORY" parent="Base.Theme.MemSTORY" />

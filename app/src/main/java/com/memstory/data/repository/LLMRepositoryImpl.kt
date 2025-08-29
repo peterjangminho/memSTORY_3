@@ -1,21 +1,22 @@
 package com.memstory.data.repository
 
-import com.memstory.data.llm.LLMEngine
+import com.memstory.llm.LLMConversationService
 import com.memstory.domain.repository.LLMRepository
 
 class LLMRepositoryImpl(
-    private val llmEngine: LLMEngine
+    private val llmConversationService: LLMConversationService
 ) : LLMRepository {
     
     override suspend fun generateText(prompt: String): String {
-        return llmEngine.generateText(prompt)
+        val response = llmConversationService.generateResponse(prompt)
+        return response.content
     }
     
     override suspend fun isModelLoaded(): Boolean {
-        return llmEngine.isModelLoaded()
+        return llmConversationService.isReady()
     }
     
     override suspend fun loadModel(): Boolean {
-        return llmEngine.loadModel()
+        return llmConversationService.initialize()
     }
 }

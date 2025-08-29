@@ -1,0 +1,14 @@
+검증할 내용들
+
+  1. 모델 파일 연동 확인:
+    - config.json 파싱
+    - tokenizer.json 로딩
+    - model_q4f16.onnx 로딩
+  2. 실제 추론 테스트:
+    - 토크나이저: "Hello" → 토큰 ID 변환
+    - ONNX 모델: 입력 형태 확인 (input_ids, position_ids, past_key_values)
+    - 출력: 다음 토큰 예측
+  3. 안드로이드 구현과 비교:
+    - Python 코드에서 성공한 입력 형태를 Kotlin으로 동일하게 구현
+
+  설치 완료되면 검증 스크립트를 만들어서 테스트해보겠습니다!

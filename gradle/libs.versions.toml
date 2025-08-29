@@ -14,7 +14,7 @@ ksp = "2.0.0-1.0.21"
 navigation = "2.8.2"
 room = "2.6.1"
 coroutines = "1.8.0"
-onnxruntime = "1.19.2"
+onnxruntime = "1.22.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }

@@ -44,3 +44,7 @@ Thumbs.db
 # APK files (store in .files/APK_files instead)
 *.apk
 *.aab
+
+# Exclude CLAUDE.md and large model files
+CLAUDE.md
+*.onnx

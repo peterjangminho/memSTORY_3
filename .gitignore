@@ -48,3 +48,6 @@ Thumbs.db
 # Exclude CLAUDE.md and large model files
 CLAUDE.md
 *.onnx
+
+# Python virtual environment
+.venv/

@@ -1,6 +1,7 @@
 package com.memstory.llm
 
 import ai.onnxruntime.*
+import ai.onnxruntime.providers.NNAPIFlags
 import android.content.Context
 import android.content.res.AssetManager
 import android.util.Log
@@ -40,7 +41,12 @@ class OnnxLLMEngine(private val context: Context) {
         val num_attention_heads: Int,
         val num_hidden_layers: Int,
         val bos_token_id: Int,
-        val eos_token_id: List<Int>
+        val eos_token_id: List<Int>,
+        val sliding_window: Int,
+        val cache_implementation: String,
+        val num_key_value_heads: Int,
+        val head_dim: Int,
+        val use_cache: Boolean
     )
     
     data class GenerationConfig(
@@ -68,10 +74,28 @@ class OnnxLLMEngine(private val context: Context) {
             tokenizer = GemmaTokenizer.fromAssets(context.assets, "$MODEL_PATH/$TOKENIZER_FILE")
             Log.d(TAG, "Tokenizer loaded with vocab size: ${tokenizer.vocabSize}")
             
-            // Load ONNX model (hybrid memory approach)
+            // Load ONNX model with NNAPI acceleration for Snapdragon 8 Elite
             val modelFilePath = ensureModelInInternalStorage()
-            ortSession = ortEnvironment?.createSession(modelFilePath)
-            Log.d(TAG, "ONNX model loaded successfully")
+            
+            // Create session options with NNAPI provider for Snapdragon 8 Elite NPU
+            val sessionOptions = OrtSession.SessionOptions()
+            try {
+                // Configure NNAPI execution provider for NPU acceleration (1.22.0+ API)
+                val nnapiFlags = java.util.EnumSet.of(
+                    NNAPIFlags.USE_FP16  // Only use FP16 optimization, allow CPU cooperation
+                )
+                sessionOptions.addNnapi(nnapiFlags)
+                sessionOptions.setOptimizationLevel(OrtSession.SessionOptions.OptLevel.ALL_OPT)
+                
+                ortSession = ortEnvironment?.createSession(modelFilePath, sessionOptions)
+                Log.d(TAG, "ONNX model loaded with NNAPI execution provider (NPU acceleration)")
+            } catch (e: Exception) {
+                Log.w(TAG, "NNAPI not available, falling back to CPU only: ${e.message}")
+                val fallbackOptions = OrtSession.SessionOptions()
+                fallbackOptions.setOptimizationLevel(OrtSession.SessionOptions.OptLevel.ALL_OPT)
+                ortSession = ortEnvironment?.createSession(modelFilePath, fallbackOptions)
+                Log.d(TAG, "ONNX model loaded with CPU execution provider only")
+            }
             
             Log.d(TAG, "LLM Engine initialization completed")
             true
@@ -92,36 +116,12 @@ class OnnxLLMEngine(private val context: Context) {
             val inputTokens = tokenizer.encode(userInput)
             Log.d(TAG, "Input tokenized: ${inputTokens.size} tokens")
             
-            // Prepare input tensors
-            val inputIds = IntArray(inputTokens.size) { inputTokens[it] }
-            val attentionMask = IntArray(inputTokens.size) { 1 }
+            Log.d(TAG, "Starting autoregressive generation with NNAPI acceleration")
             
-            // Create input tensors
-            val inputTensor = OnnxTensor.createTensor(
-                ortEnvironment, 
-                IntBuffer.wrap(inputIds), 
-                longArrayOf(1, inputTokens.size.toLong())
-            )
+            // Generate tokens using proper autoregressive generation with NNAPI
+            val generatedTokens = generateTokens(inputTokens, maxTokens)
             
-            val attentionTensor = OnnxTensor.createTensor(
-                ortEnvironment,
-                IntBuffer.wrap(attentionMask),
-                longArrayOf(1, inputTokens.size.toLong())
-            )
-            
-            // Run inference
-            val inputs = mapOf(
-                "input_ids" to inputTensor,
-                "attention_mask" to attentionTensor
-            )
-            
-            val outputs = ortSession?.run(inputs)
-            val logits = outputs?.get(0)?.value as Array<Array<FloatArray>>
-            
-            // Generate tokens using sampling
-            val generatedTokens = generateTokens(inputTokens.toMutableList(), logits, maxTokens)
-            
-            // Decode response
+            // Decode response (skip input tokens)
             val response = tokenizer.decode(generatedTokens.drop(inputTokens.size))
             // Memory usage summary for this generation
             val finalMemoryInfo = """
@@ -135,10 +135,7 @@ class OnnxLLMEngine(private val context: Context) {
             Log.d(TAG, finalMemoryInfo)
             Log.d(TAG, "Response generated: $response")
             
-            // Cleanup tensors
-            inputTensor.close()
-            attentionTensor.close()
-            outputs?.close()
+            // Cleanup handled in generateTokens() function
             
             response
         } catch (e: Exception) {
@@ -148,53 +145,115 @@ class OnnxLLMEngine(private val context: Context) {
     }
     
     /**
-     * Generate tokens using sampling strategy with native KV cache management
-     * KV cache lives in native heap to minimize memory pressure
+     * Gemma 3 1B optimized generation with sliding window (official config)
+     * NNAPI + NPU acceleration with hybrid cache implementation
      */
-    private fun generateTokens(
-        inputTokens: MutableList<Int>,
-        initialLogits: Array<Array<FloatArray>>,
+    private suspend fun generateTokens(
+        initialTokens: List<Int>,
         maxTokens: Int,
         temperature: Float = 0.7f,
         topP: Float = 0.9f
-    ): List<Int> {
-        val generatedTokens = inputTokens.toMutableList()
+    ): List<Int> = withContext(Dispatchers.IO) {
+        val generatedTokens = initialTokens.toMutableList()
         
-        // KV cache memory estimation for long conversations
-        val estimatedKVCacheSize = estimateKVCacheMemory(maxTokens)
-        Log.d(TAG, "Estimated KV cache memory: ${estimatedKVCacheSize}MB (native heap)")
+        Log.d(TAG, "Gemma 3 1B generation: sliding_window=${modelConfig.sliding_window}, cache=${modelConfig.cache_implementation}")
+        
+        // Initialize KV cache for all 26 layers (Gemma 3 1B)
+        // First inference: past_sequence_length = 0 (empty cache)
+        var kvCache = mutableMapOf<String, OnnxTensor>()
+        for (layer in 0 until modelConfig.num_hidden_layers) {
+            // Initialize with empty cache: (batch=1, heads=1, seq_len=0, head_dim=256)
+            val emptyKey = Array(1) { Array(modelConfig.num_key_value_heads) { Array(0) { FloatArray(modelConfig.head_dim) } } }
+            val emptyValue = Array(1) { Array(modelConfig.num_key_value_heads) { Array(0) { FloatArray(modelConfig.head_dim) } } }
+            
+            kvCache["past_key_values.${layer}.key"] = OnnxTensor.createTensor(ortEnvironment, emptyKey)
+            kvCache["past_key_values.${layer}.value"] = OnnxTensor.createTensor(ortEnvironment, emptyValue)
+        }
         
         for (i in 0 until maxTokens) {
-            // Native KV cache management happens inside ONNX Runtime
-            // Each token generation reuses and extends the KV cache
-            
-            // Get logits for next token (last position)
-            val nextTokenLogits = initialLogits[0].last()
-            
-            // Apply temperature scaling
-            for (j in nextTokenLogits.indices) {
-                nextTokenLogits[j] = nextTokenLogits[j] / temperature
-            }
-            
-            // Sample next token using top-p sampling
-            val nextToken = sampleTopP(nextTokenLogits, topP)
-            
-            // Check for end of sequence
-            if (modelConfig.eos_token_id.contains(nextToken)) {
-                Log.d(TAG, "EOS token reached at position ${generatedTokens.size}")
+            try {
+                // Apply sliding window (official Gemma 3 1B optimization)
+                val windowedTokens = if (generatedTokens.size > modelConfig.sliding_window) {
+                    generatedTokens.takeLast(modelConfig.sliding_window)
+                } else {
+                    generatedTokens
+                }
+                
+                val inputIds = LongArray(windowedTokens.size) { windowedTokens[it].toLong() }
+                val positionIds = LongArray(windowedTokens.size) { 
+                    // Position IDs account for full sequence position
+                    (generatedTokens.size - windowedTokens.size + it).toLong()
+                }
+                
+                // Create tensors
+                val inputTensor = OnnxTensor.createTensor(ortEnvironment, Array(1) { inputIds })
+                val positionTensor = OnnxTensor.createTensor(ortEnvironment, Array(1) { positionIds })
+                
+                // Inputs following official config with KV cache
+                val inputs = mutableMapOf<String, OnnxTensor>(
+                    "input_ids" to inputTensor,
+                    "position_ids" to positionTensor
+                )
+                inputs.putAll(kvCache)
+                
+                // Run ONNX inference with NNAPI (hybrid cache handled by ONNX Runtime)
+                val outputs = ortSession?.run(inputs)
+                val logits = outputs?.get(0)?.value as Array<Array<FloatArray>>
+                
+                // Get next token logits
+                val nextTokenLogits = logits[0].last().copyOf()
+                
+                // Apply temperature
+                for (j in nextTokenLogits.indices) {
+                    nextTokenLogits[j] = nextTokenLogits[j] / temperature
+                }
+                
+                // Sample next token
+                val nextToken = sampleTopP(nextTokenLogits, topP)
+                
+                // Check for EOS
+                if (modelConfig.eos_token_id.contains(nextToken)) {
+                    Log.d(TAG, "EOS token reached at position ${generatedTokens.size}")
+                    break
+                }
+                
+                generatedTokens.add(nextToken)
+                
+                // Update KV cache with new outputs (present.X.key → past_key_values.X.key)
+                val newKvCache = mutableMapOf<String, OnnxTensor>()
+                for (layer in 0 until modelConfig.num_hidden_layers) {
+                    // Outputs: [logits, present.0.key, present.0.value, present.1.key, present.1.value, ...]
+                    val keyOutput = outputs?.get(1 + layer * 2) as OnnxTensor
+                    val valueOutput = outputs?.get(2 + layer * 2) as OnnxTensor
+                    
+                    newKvCache["past_key_values.${layer}.key"] = keyOutput
+                    newKvCache["past_key_values.${layer}.value"] = valueOutput
+                }
+                
+                // Close old KV cache tensors to prevent memory leak
+                kvCache.values.forEach { it.close() }
+                kvCache = newKvCache
+                
+                // Cleanup immediately (memory efficient)
+                inputTensor.close()
+                positionTensor.close()
+                
+                // Log sliding window efficiency
+                if ((generatedTokens.size % 100) == 0) {
+                    val windowSize = minOf(generatedTokens.size, modelConfig.sliding_window)
+                    Log.d(TAG, "Generated ${generatedTokens.size} tokens (window: $windowSize)")
+                }
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Error generating token $i: ${e.message}")
                 break
-            }
-            
-            generatedTokens.add(nextToken)
-            
-            // Log KV cache growth periodically
-            if ((generatedTokens.size % 100) == 0) {
-                val currentKVSize = estimateKVCacheMemory(generatedTokens.size)
-                Log.d(TAG, "KV cache at ${generatedTokens.size} tokens: ${currentKVSize}MB")
             }
         }
         
-        return generatedTokens
+        // Final cleanup of KV cache
+        kvCache.values.forEach { it.close() }
+        
+        generatedTokens
     }
     
     /**
@@ -268,7 +327,12 @@ class OnnxLLMEngine(private val context: Context) {
             num_attention_heads = jsonObject.get("num_attention_heads").asInt,
             num_hidden_layers = jsonObject.get("num_hidden_layers").asInt,
             bos_token_id = jsonObject.get("bos_token_id").asInt,
-            eos_token_id = gson.fromJson(jsonObject.get("eos_token_id"), List::class.java).map { (it as Double).toInt() }
+            eos_token_id = gson.fromJson(jsonObject.get("eos_token_id"), List::class.java).map { (it as Double).toInt() },
+            sliding_window = jsonObject.get("sliding_window")?.asInt ?: 512,
+            cache_implementation = jsonObject.get("cache_implementation")?.asString ?: "hybrid",
+            num_key_value_heads = jsonObject.get("num_key_value_heads")?.asInt ?: 1,
+            head_dim = jsonObject.get("head_dim")?.asInt ?: 256,
+            use_cache = jsonObject.get("use_cache")?.asBoolean ?: true
         )
     }
     

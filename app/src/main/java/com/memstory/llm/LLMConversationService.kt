@@ -81,6 +81,39 @@ Remember that you work completely offline - you have no internet connection."""
             }
         }
     }
+
+    
+    /**
+     * 🚀 Warm up the LLM service in background (non-blocking)
+     * This triggers the full initialization pipeline:
+     * APK assets → internal storage copy → native heap loading
+     * Called from MainActivity.onCreate() for instant user experience
+     */
+    fun warmUp() {
+        if (isInitialized) {
+            Log.d(TAG, "LLM service already initialized")
+            return
+        }
+        
+        // Launch initialization in background coroutine
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                Log.d(TAG, "🚀 Starting background LLM warm-up...")
+                val startTime = System.currentTimeMillis()
+                
+                val success = initialize()
+                
+                val warmUpTime = System.currentTimeMillis() - startTime
+                if (success) {
+                    Log.d(TAG, "✅ LLM warm-up completed successfully in ${warmUpTime}ms")
+                } else {
+                    Log.e(TAG, "❌ LLM warm-up failed after ${warmUpTime}ms")
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Error during LLM warm-up", e)
+            }
+        }
+    }
     
     /**
      * Generate response for user input
@@ -101,12 +134,12 @@ Remember that you work completely offline - you have no internet connection."""
                 
                 Log.d(TAG, "Generating response for: $userInput")
                 
-                // Add user message to history
-                addToHistory(ConversationMessage(userInput, isUser = true))
-                
-                // Build conversation prompt
+                // Build conversation prompt first (before adding to history to avoid duplication)
                 val prompt = buildConversationPrompt(userInput)
                 Log.d(TAG, "Built prompt with ${prompt.length} characters")
+                
+                // Add user message to history after prompt building
+                addToHistory(ConversationMessage(userInput, isUser = true))
                 
                 // Generate response using LLM engine
                 val response = llmEngine.generateResponse(prompt, MAX_RESPONSE_TOKENS)
@@ -147,11 +180,11 @@ Remember that you work completely offline - you have no internet connection."""
         }
         
         try {
-            // Add user message to history
-            addToHistory(ConversationMessage(userInput, isUser = true))
-            
-            // Build conversation prompt
+            // Build conversation prompt first (before adding to history to avoid duplication)
             val prompt = buildConversationPrompt(userInput)
+            
+            // Add user message to history after prompt building
+            addToHistory(ConversationMessage(userInput, isUser = true))
             
             // For now, emit the full response at once
             // TODO: Implement actual streaming when ONNX Runtime supports it

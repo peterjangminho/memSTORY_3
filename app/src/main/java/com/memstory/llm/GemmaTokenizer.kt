@@ -20,7 +20,9 @@ class GemmaTokenizer private constructor(
     private val addBosToken: Boolean,
     private val addEosToken: Boolean,
     // Native heap: Heavy vocabulary data (33MB) handled natively
-    private var nativeVocabPath: String = ""
+    private var nativeVocabPath: String = "",
+    // Vocab mapping for decoding (loaded from tokenizer.json)
+    private val vocabMap: Map<Int, String> = emptyMap()
 ) {
     
     data class TokenizerConfig(
@@ -60,41 +62,76 @@ class GemmaTokenizer private constructor(
             Log.d(TAG, "Java heap: Config objects (~1MB)")
             Log.d(TAG, "Native heap: Vocabulary data (~33MB)")
             
-            // Load lightweight config in Java heap
-            val configPath = tokenizerPath.replace("tokenizer.json", "tokenizer_config.json")
-            val configInputStream = assets.open(configPath)
-            val configJson = InputStreamReader(configInputStream).use { it.readText() }
+            // Load lightweight configs in Java heap
+            val tokenizerConfigPath = tokenizerPath.replace("tokenizer.json", "tokenizer_config.json")
+            val specialTokensPath = tokenizerPath.replace("tokenizer.json", "special_tokens_map.json")
+            val generationConfigPath = tokenizerPath.replace("tokenizer.json", "generation_config.json")
+            
+            val tokenizerConfigJson = InputStreamReader(assets.open(tokenizerConfigPath)).use { it.readText() }
+            val specialTokensJson = InputStreamReader(assets.open(specialTokensPath)).use { it.readText() }
+            val generationConfigJson = InputStreamReader(assets.open(generationConfigPath)).use { it.readText() }
             
             val gson = Gson()
-            val configObject = gson.fromJson(configJson, JsonObject::class.java)
+            val tokenizerConfigObject = gson.fromJson(tokenizerConfigJson, JsonObject::class.java)
+            val specialTokensObject = gson.fromJson(specialTokensJson, JsonObject::class.java)
+            val generationConfigObject = gson.fromJson(generationConfigJson, JsonObject::class.java)
+            
+            Log.d(TAG, "Loading all 5 tokenizer files...")
+            Log.d(TAG, "- tokenizer_config.json: ✅")
+            Log.d(TAG, "- special_tokens_map.json: ✅")
+            Log.d(TAG, "- generation_config.json: ✅")
+            Log.d(TAG, "- tokenizer.json: ✅ (vocab)")
+            Log.d(TAG, "- config.json: ✅ (loaded by OnnxLLMEngine)")
+            
+            // Extract real token IDs from special_tokens_map.json
+            val realBosTokenId = generationConfigObject.get("bos_token_id")?.asInt ?: 2
+            val realEosTokenIds = gson.fromJson(generationConfigObject.get("eos_token_id"), List::class.java).map { (it as Double).toInt() }
+            val realPadTokenId = generationConfigObject.get("pad_token_id")?.asInt ?: 0
             
             val tokenizerConfig = TokenizerConfig(
                 vocabSize = 262144, // Gemma 3 1B standard vocab size
-                bosTokenId = BOS_TOKEN_ID,
-                eosTokenId = EOS_TOKEN_ID,
+                bosTokenId = realBosTokenId,
+                eosTokenId = realEosTokenIds.first(), // Use first EOS token ID
                 unkTokenId = UNK_TOKEN_ID,
-                padTokenId = PAD_TOKEN_ID
+                padTokenId = realPadTokenId
             )
             
-            // Load special tokens map (lightweight)
+            // Load special tokens from real files
             val specialTokens = mutableMapOf<String, Int>()
-            specialTokens[PAD_TOKEN] = PAD_TOKEN_ID
-            specialTokens[EOS_TOKEN] = EOS_TOKEN_ID
-            specialTokens[BOS_TOKEN] = BOS_TOKEN_ID
+            specialTokens[PAD_TOKEN] = realPadTokenId
+            specialTokens[EOS_TOKEN] = realEosTokenIds.first()
+            specialTokens[BOS_TOKEN] = realBosTokenId
             specialTokens[UNK_TOKEN] = UNK_TOKEN_ID
-            specialTokens[MASK_TOKEN] = MASK_TOKEN_ID
+            if (realEosTokenIds.size > 1) {
+                specialTokens["<end_of_turn>"] = realEosTokenIds[1] // Second EOS token (106)
+            }
             
-            val addBosToken = configObject.get("add_bos_token")?.asBoolean ?: true
-            val addEosToken = configObject.get("add_eos_token")?.asBoolean ?: false
+            val addBosToken = tokenizerConfigObject.get("add_bos_token")?.asBoolean ?: true
+            val addEosToken = tokenizerConfigObject.get("add_eos_token")?.asBoolean ?: false
             
             Log.d(TAG, "Config loaded in Java heap: ${tokenizerConfig.vocabSize} vocab size")
+            
+            // Load vocab mapping from tokenizer.json (for decoding)
+            Log.d(TAG, "Loading vocab mapping for decoding...")
+            val tokenizerInputStream = assets.open(tokenizerPath)
+            val tokenizerJson = InputStreamReader(tokenizerInputStream).use { it.readText() }
+            val tokenizerObject = gson.fromJson(tokenizerJson, JsonObject::class.java)
+            val vocabObject = tokenizerObject.get("model").asJsonObject.get("vocab").asJsonObject
+            
+            // Create reverse mapping: token_id -> token_string
+            val vocabMap = mutableMapOf<Int, String>()
+            for ((token, idElement) in vocabObject.entrySet()) {
+                vocabMap[idElement.asInt] = token
+            }
+            Log.d(TAG, "Loaded ${vocabMap.size} vocab entries for decoding")
             
             val tokenizer = GemmaTokenizer(
                 tokenizerConfig = tokenizerConfig,
                 specialTokens = specialTokens,
                 addBosToken = addBosToken,
                 addEosToken = addEosToken,
-                nativeVocabPath = tokenizerPath
+                nativeVocabPath = tokenizerPath,
+                vocabMap = vocabMap
             )
             
             Log.d(TAG, "Tokenizer initialized with hybrid memory architecture")
@@ -146,10 +183,17 @@ class GemmaTokenizer private constructor(
                 tokenizerConfig.eosTokenId -> break    // Stop at EOS token
                 tokenizerConfig.unkTokenId -> tokens.add("")  // Handle unknown tokens
                 else -> {
-                    // TODO: Native vocab lookup here
-                    // val token = nativeGetToken(nativeVocabHandle, tokenId)
-                    val token = "token_$tokenId" // Simulation
-                    tokens.add(token)
+                    // Use vocab mapping for decoding
+                    val token = vocabMap[tokenId]
+                    if (token != null) {
+                        // Handle SentencePiece underscore encoding (▁ represents space)
+                        val decodedToken = token.replace("▁", " ")
+                        tokens.add(decodedToken)
+                    } else {
+                        Log.w(TAG, "Unknown token ID: $tokenId")
+                        // Fallback to unknown token
+                        tokens.add("")
+                    }
                 }
             }
         }

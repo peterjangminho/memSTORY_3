@@ -14,11 +14,18 @@ import androidx.navigation.compose.rememberNavController
 import com.memstory.presentation.navigation.MemStoryNavigation
 import com.memstory.presentation.theme.MemSTORYTheme
 import org.koin.androidx.compose.KoinAndroidContext
+import org.koin.core.component.KoinComponent
+import org.koin.core.component.get
+import com.memstory.llm.LLMConversationService
 
-class MainActivity : ComponentActivity() {
+class MainActivity : ComponentActivity(), KoinComponent {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        
+        // 🚀 Background LLM initialization for instant user experience
+        initializeLLMService()
+        
         setContent {
             KoinAndroidContext {
                 MemSTORYTheme {
@@ -32,6 +39,20 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+    
+    /**
+     * 🚀 Initialize LLM service in background during app startup
+     * This moves the 7-second initialization from first user interaction to app launch
+     */
+    private fun initializeLLMService() {
+        val llmService = get<LLMConversationService>()
+        // LLMConversationService will automatically initialize OnnxLLMEngine on first access
+        // This triggers: APK assets → internal storage copy → native heap loading
+        // Total time: ~7 seconds in background while user sees UI
+        // 🚀 Trigger actual background initialization
+        llmService.warmUp() // This starts the 7-second initialization process
+        android.util.Log.d("MainActivity", "🚀 Background LLM warm-up initiated")
     }
 }
 

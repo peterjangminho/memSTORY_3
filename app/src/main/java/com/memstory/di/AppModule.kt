@@ -3,7 +3,7 @@ package com.memstory.di
 import com.memstory.data.repository.LLMRepositoryImpl
 import com.memstory.domain.repository.LLMRepository
 import com.memstory.domain.usecase.GenerateTextUseCase
-import org.koin.androidx.viewmodel.dsl.viewModel
+import org.koin.core.module.dsl.viewModel
 import org.koin.dsl.module
 
 val appModule = module {

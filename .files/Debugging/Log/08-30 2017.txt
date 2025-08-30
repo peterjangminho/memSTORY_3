@@ -1,0 +1,176 @@
+2025-08-30 20:17:04.737 19166-19206 OnnxLLMEngine           com.memstory                         D  --- Generation Step 218 (INCREMENTAL) ---
+2025-08-30 20:17:04.737 19166-19206 OnnxLLMEngine           com.memstory                         D  Processing last token: 33 at position 299
+2025-08-30 20:17:04.737 19166-19206 OnnxLLMEngine           com.memstory                         D  🔥 STATIC KV INFERENCE: input_ids=1, positions=[299]
+2025-08-30 20:17:04.737 19166-19206 OnnxLLMEngine           com.memstory                         D  Cache state: position=300, seq_len=300
+2025-08-30 20:17:04.770 19166-19172 com.memstory            com.memstory                         I  Background concurrent mark compact GC freed 76MB AllocSpace bytes, 53(16MB) LOS objects, 39% free, 74MB/122MB, paused 84us,2.212ms total 107.990ms
+2025-08-30 20:17:04.984 19166-19206 OnnxLLMEngine           com.memstory                         D  Converting logits from Array to OnnxTensor
+2025-08-30 20:17:04.984 19166-19206 OnnxLLMEngine           com.memstory                         E  Failed to convert logits array for layer -1: float[][][] cannot be cast to float[][][][]
+2025-08-30 20:17:04.985 19166-19206 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 1, 1, 256]
+2025-08-30 20:17:04.987 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 0 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:04.989 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 0 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:04.989 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 0 KV cache updated successfully (converted)
+2025-08-30 20:17:04.992 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 1 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:04.995 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 1 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:04.995 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 1 KV cache updated successfully (converted)
+2025-08-30 20:17:04.998 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 2 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.001 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 2 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.001 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 2 KV cache updated successfully (converted)
+2025-08-30 20:17:05.004 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 3 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.007 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 3 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.007 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 3 KV cache updated successfully (converted)
+2025-08-30 20:17:05.010 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 4 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.012 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 4 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.013 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 4 KV cache updated successfully (converted)
+2025-08-30 20:17:05.016 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 5 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.018 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 5 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.018 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 5 KV cache updated successfully (converted)
+2025-08-30 20:17:05.022 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 6 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.024 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 6 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.024 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 6 KV cache updated successfully (converted)
+2025-08-30 20:17:05.028 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 7 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.030 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 7 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.030 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 7 KV cache updated successfully (converted)
+2025-08-30 20:17:05.033 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 8 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.036 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 8 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.036 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 8 KV cache updated successfully (converted)
+2025-08-30 20:17:05.040 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 9 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.044 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 9 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.044 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 9 KV cache updated successfully (converted)
+2025-08-30 20:17:05.048 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 10 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.052 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 10 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.052 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 10 KV cache updated successfully (converted)
+2025-08-30 20:17:05.057 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 11 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.061 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 11 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.061 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 11 KV cache updated successfully (converted)
+2025-08-30 20:17:05.065 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 12 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.069 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 12 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.069 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 12 KV cache updated successfully (converted)
+2025-08-30 20:17:05.073 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 13 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.077 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 13 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.077 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 13 KV cache updated successfully (converted)
+2025-08-30 20:17:05.080 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 14 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.083 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 14 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.083 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 14 KV cache updated successfully (converted)
+2025-08-30 20:17:05.085 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 15 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.088 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 15 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.088 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 15 KV cache updated successfully (converted)
+2025-08-30 20:17:05.091 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 16 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.094 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 16 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.094 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 16 KV cache updated successfully (converted)
+2025-08-30 20:17:05.097 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 17 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.100 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 17 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.100 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 17 KV cache updated successfully (converted)
+2025-08-30 20:17:05.103 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 18 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.106 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 18 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.106 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 18 KV cache updated successfully (converted)
+2025-08-30 20:17:05.109 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 19 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.112 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 19 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.112 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 19 KV cache updated successfully (converted)
+2025-08-30 20:17:05.114 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 20 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.117 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 20 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.117 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 20 KV cache updated successfully (converted)
+2025-08-30 20:17:05.120 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 21 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.126 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 21 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.126 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 21 KV cache updated successfully (converted)
+2025-08-30 20:17:05.129 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 22 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.131 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 22 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.131 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 22 KV cache updated successfully (converted)
+2025-08-30 20:17:05.134 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 23 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.135 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 23 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.135 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 23 KV cache updated successfully (converted)
+2025-08-30 20:17:05.137 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 24 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.139 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 24 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.139 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 24 KV cache updated successfully (converted)
+2025-08-30 20:17:05.142 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 25 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.145 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 25 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 301, 256]
+2025-08-30 20:17:05.145 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 25 KV cache updated successfully (converted)
+2025-08-30 20:17:05.145 19166-19206 OnnxLLMEngine           com.memstory                         D  ✅ Generated token: 152, KV cache updated
+2025-08-30 20:17:05.145 19166-19206 OnnxLLMEngine           com.memstory                         V  🔄 Expanding KV cache from 83 to 301
+2025-08-30 20:17:05.145 19166-19206 OnnxLLMEngine           com.memstory                         D  --- Generation Step 219 (INCREMENTAL) ---
+2025-08-30 20:17:05.145 19166-19206 OnnxLLMEngine           com.memstory                         D  Processing last token: 152 at position 300
+2025-08-30 20:17:05.145 19166-19206 OnnxLLMEngine           com.memstory                         D  🔥 STATIC KV INFERENCE: input_ids=1, positions=[300]
+2025-08-30 20:17:05.145 19166-19206 OnnxLLMEngine           com.memstory                         D  Cache state: position=301, seq_len=301
+2025-08-30 20:17:05.177 19166-19172 com.memstory            com.memstory                         I  Background concurrent mark compact GC freed 77MB AllocSpace bytes, 53(16MB) LOS objects, 39% free, 74MB/122MB, paused 71us,2.208ms total 107.664ms
+2025-08-30 20:17:05.392 19166-19206 OnnxLLMEngine           com.memstory                         D  Converting logits from Array to OnnxTensor
+2025-08-30 20:17:05.392 19166-19206 OnnxLLMEngine           com.memstory                         E  Failed to convert logits array for layer -1: float[][][] cannot be cast to float[][][][]
+2025-08-30 20:17:05.392 19166-19206 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 1, 1, 256]
+2025-08-30 20:17:05.395 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 0 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.397 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 0 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.397 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 0 KV cache updated successfully (converted)
+2025-08-30 20:17:05.399 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 1 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.402 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 1 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.402 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 1 KV cache updated successfully (converted)
+2025-08-30 20:17:05.405 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 2 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.408 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 2 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.408 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 2 KV cache updated successfully (converted)
+2025-08-30 20:17:05.411 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 3 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.413 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 3 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.413 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 3 KV cache updated successfully (converted)
+2025-08-30 20:17:05.416 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 4 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.419 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 4 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.419 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 4 KV cache updated successfully (converted)
+2025-08-30 20:17:05.423 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 5 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.426 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 5 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.426 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 5 KV cache updated successfully (converted)
+2025-08-30 20:17:05.429 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 6 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.432 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 6 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.432 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 6 KV cache updated successfully (converted)
+2025-08-30 20:17:05.436 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 7 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.439 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 7 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.439 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 7 KV cache updated successfully (converted)
+2025-08-30 20:17:05.442 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 8 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.445 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 8 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.445 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 8 KV cache updated successfully (converted)
+2025-08-30 20:17:05.448 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 9 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.451 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 9 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.451 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 9 KV cache updated successfully (converted)
+2025-08-30 20:17:05.454 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 10 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.457 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 10 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.457 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 10 KV cache updated successfully (converted)
+2025-08-30 20:17:05.460 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 11 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.463 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 11 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.463 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 11 KV cache updated successfully (converted)
+2025-08-30 20:17:05.466 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 12 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.469 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 12 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.469 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 12 KV cache updated successfully (converted)
+2025-08-30 20:17:05.472 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 13 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.475 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 13 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.475 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 13 KV cache updated successfully (converted)
+2025-08-30 20:17:05.478 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 14 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.481 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 14 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.481 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 14 KV cache updated successfully (converted)
+2025-08-30 20:17:05.483 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 15 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.486 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 15 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.486 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 15 KV cache updated successfully (converted)
+2025-08-30 20:17:05.489 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 16 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.492 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 16 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.492 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 16 KV cache updated successfully (converted)
+2025-08-30 20:17:05.495 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 17 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.498 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 17 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.498 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 17 KV cache updated successfully (converted)
+2025-08-30 20:17:05.501 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 18 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.504 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 18 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.504 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 18 KV cache updated successfully (converted)
+2025-08-30 20:17:05.507 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 19 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.509 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 19 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.509 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 19 KV cache updated successfully (converted)
+2025-08-30 20:17:05.512 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 20 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.515 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 20 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.515 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 20 KV cache updated successfully (converted)
+2025-08-30 20:17:05.518 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 21 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.521 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 21 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.521 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 21 KV cache updated successfully (converted)
+2025-08-30 20:17:05.527 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 22 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.529 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 22 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.529 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 22 KV cache updated successfully (converted)
+2025-08-30 20:17:05.532 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 23 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.533 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 23 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.533 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 23 KV cache updated successfully (converted)
+2025-08-30 20:17:05.535 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 24 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.537 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 24 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.537 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 24 KV cache updated successfully (converted)
+2025-08-30 20:17:05.540 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 25 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.542 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 25 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 302, 256]
+2025-08-30 20:17:05.542 19166-19206 OnnxLLMEngine           com.memstory                         V  Layer 25 KV cache updated successfully (converted)
+2025-08-30 20:17:05.542 19166-19206 OnnxLLMEngine           com.memstory                         D  ✅ Generated token: 92, KV cache updated
+2025-08-30 20:17:05.542 19166-19206 OnnxLLMEngine           com.memstory                         V  🔄 Expanding KV cache from 83 to 302

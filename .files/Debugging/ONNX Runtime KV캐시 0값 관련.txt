@@ -1,0 +1,45 @@
+ONNX Runtime의 KV 캐시 초기값 관련 공식 문서를 찾아보겠습니다.ONNX Runtime의 공식 문서를 Context7로 검색한 결과, **구체적으로 "KV 캐시 초기값이 0이 되면 안 된다"고 명시한 공식 가이드라인은 찾을 수 없었습니다**. 하지만 여러 관련 문서와 예제 코드를 통해 중요한 패턴과 권장사항을 발견했습니다.
+
+## * 주요 발견사항
+
+### **1. ONNX Runtime 공식 예제의 패턴**
+ONNX Runtime의 GPT2 변환 예제에서는 Empty Past State를 다음과 같이 생성합니다:
+```python
+# Empty Past State for generating first word
+empty_past = []
+batch_size = input_ids.size(0)
+sequence_length = input_ids.size(1)
+past_shape = [2, batch_size, num_attention_heads, 0, hidden_size // num_attention_heads]
+for i in range(num_layer):
+    empty_past.append(torch.empty(past_shape).type(torch.float32).to(device))
+```
+
+※ 여기서 중요한 점은 **`torch.empty()`를 사용**하고 있다는 것입니다.
+
+### **2. torch.empty() vs torch.zeros()의 차이**
+* **`torch.empty()`**: 초기화되지 않은 메모리를 할당하여 임의의 값을 가짐
+* **`torch.zeros()`**: 모든 값을 0으로 초기화
+
+실제로 Whisper ONNX 변환 블로그에서는 ONNX Runtime 실행 시 `np.zeros`로 캐시를 초기화해도 정상 작동한다고 언급하고 있습니다.
+
+### **3. TensorRT-LLM에서의 패턴**
+Microsoft의 TensorRT-LLM 구현에서는 다음과 같은 패턴을 사용합니다:
+```python
+self.buffer[f'present_key_value_{i}'] = torch.empty(
+    cache_shape, dtype=kv_cache_type, device=self.device)
+self.buffer[f'present_lf1_{i}'] = torch.zeros(lf1_cache_shape, ...)
+```
+
+※ KV 캐시는 `torch.empty()`로, 다른 캐시는 `torch.zeros()`로 초기화하고 있습니다.
+
+## * 결론 및 권장사항
+
+1. **공식 가이드라인 부재**: ONNX Runtime 공식 문서에서 "KV 캐시 초기값이 0이 되면 안 된다"는 명시적인 가이드라인은 없습니다.
+
+2. **일반적인 관행**: 대부분의 공식 예제와 구현에서는 **`torch.empty()`를 사용하여 KV 캐시를 초기화**합니다.
+
+3. **성능상 이유**: `torch.empty()`는 초기화 과정을 건너뛰어 메모리 할당 성능이 더 좋습니다.
+
+4. **실용적 접근**: 실제로는 `np.zeros`로 초기화해도 동작하지만, 공식 예제들을 따라 `torch.empty()`를 사용하는 것이 권장됩니다.
+
+**따라서 ONNX Runtime에서는 KV 캐시 초기화 시 `torch.empty()`를 사용하는 것이 표준적인 관행이며, 이는 성능상의 이유와 공식 예제들의 일관성을 위한 것으로 보입니다.**

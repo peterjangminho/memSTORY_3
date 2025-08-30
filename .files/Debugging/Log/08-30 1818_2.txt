@@ -1,0 +1,59 @@
+2025-08-30 18:18:39.205  2729-3092  OnnxLLMEngine           com.memstory                         D  🔥 Processing system prompt to initialize KV cache...
+2025-08-30 18:18:39.752  2729-3092  OnnxLLMEngine           com.memstory                         D  ✅ System prompt processed, KV cache populated with 34 tokens
+2025-08-30 18:18:39.752  2729-3092  OnnxLLMEngine           com.memstory                         D  Available outputs: 53
+2025-08-30 18:18:39.759  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[0]: Array
+2025-08-30 18:18:39.760  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[1]: Array
+2025-08-30 18:18:39.760  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[2]: Array
+2025-08-30 18:18:39.760  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[3]: Array
+2025-08-30 18:18:39.761  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[4]: Array
+2025-08-30 18:18:39.761  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[5]: Array
+2025-08-30 18:18:39.761  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[6]: Array
+2025-08-30 18:18:39.761  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[7]: Array
+2025-08-30 18:18:39.762  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[8]: Array
+2025-08-30 18:18:39.762  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[9]: Array
+2025-08-30 18:18:39.762  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[10]: Array
+2025-08-30 18:18:39.762  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[11]: Array
+2025-08-30 18:18:39.763  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[12]: Array
+2025-08-30 18:18:39.763  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[13]: Array
+2025-08-30 18:18:39.763  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[14]: Array
+2025-08-30 18:18:39.764  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[15]: Array
+2025-08-30 18:18:39.764  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[16]: Array
+2025-08-30 18:18:39.764  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[17]: Array
+2025-08-30 18:18:39.764  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[18]: Array
+2025-08-30 18:18:39.765  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[19]: Array
+2025-08-30 18:18:39.765  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[20]: Array
+2025-08-30 18:18:39.765  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[21]: Array
+2025-08-30 18:18:39.766  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[22]: Array
+2025-08-30 18:18:39.766  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[23]: Array
+2025-08-30 18:18:39.766  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[24]: Array
+2025-08-30 18:18:39.766  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[25]: Array
+2025-08-30 18:18:39.767  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[26]: Array
+2025-08-30 18:18:39.767  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[27]: Array
+2025-08-30 18:18:39.767  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[28]: Array
+2025-08-30 18:18:39.767  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[29]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[30]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[31]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[32]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[33]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[34]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[35]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[36]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[37]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[38]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[39]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[40]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[41]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[42]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[43]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[44]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[45]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[46]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[47]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[48]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[49]: Array
+2025-08-30 18:18:39.771  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[50]: Array
+2025-08-30 18:18:39.771  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[51]: Array
+2025-08-30 18:18:39.771  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[52]: Array
+2025-08-30 18:18:39.778  2729-3092  OnnxLLMEngine           com.memstory                         E  Failed to extract logits from outputs
+2025-08-30 18:18:39.778  2729-3092  OnnxLLMEngine           com.memstory                         D  LLM Engine initialization completed
+2025-08-30 18:18:39.779  2729-3092  LLMConversationService  com.memstory                         D  LLM Service initialized successfully

@@ -1,0 +1,432 @@
+2025-08-30 12:06:25.355 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 11 ---
+2025-08-30 12:06:25.355 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 64
+2025-08-30 12:06:25.355 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 64
+2025-08-30 12:06:25.355 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 64
+2025-08-30 12:06:25.355 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:25.355 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 64]
+2025-08-30 12:06:25.355 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 64]
+2025-08-30 12:06:25.355 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:26.065 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:26.065 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:26.082 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 64, 262144]
+2025-08-30 12:06:26.225 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 564 (generatedTokens.size now: 65)
+2025-08-30 12:06:26.225 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 12 ---
+2025-08-30 12:06:26.225 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 65
+2025-08-30 12:06:26.225 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 65
+2025-08-30 12:06:26.225 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 65
+2025-08-30 12:06:26.225 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:26.226 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 65]
+2025-08-30 12:06:26.226 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 65]
+2025-08-30 12:06:26.226 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:26.959 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:26.959 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:26.978 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 65, 262144]
+2025-08-30 12:06:27.121 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236789 (generatedTokens.size now: 66)
+2025-08-30 12:06:27.122 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 13 ---
+2025-08-30 12:06:27.122 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 66
+2025-08-30 12:06:27.122 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 66
+2025-08-30 12:06:27.122 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 66
+2025-08-30 12:06:27.122 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:27.122 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 66]
+2025-08-30 12:06:27.122 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 66]
+2025-08-30 12:06:27.122 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:27.853 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:27.853 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:27.869 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 66, 262144]
+2025-08-30 12:06:28.010 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236757 (generatedTokens.size now: 67)
+2025-08-30 12:06:28.011 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 14 ---
+2025-08-30 12:06:28.011 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 67
+2025-08-30 12:06:28.011 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 67
+2025-08-30 12:06:28.011 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 67
+2025-08-30 12:06:28.011 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:28.011 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 67]
+2025-08-30 12:06:28.011 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 67]
+2025-08-30 12:06:28.011 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:28.769 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:28.769 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:28.789 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 67, 262144]
+2025-08-30 12:06:28.934 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 3978 (generatedTokens.size now: 68)
+2025-08-30 12:06:28.934 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 15 ---
+2025-08-30 12:06:28.934 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 68
+2025-08-30 12:06:28.934 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 68
+2025-08-30 12:06:28.934 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 68
+2025-08-30 12:06:28.934 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:28.934 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 68]
+2025-08-30 12:06:28.934 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 68]
+2025-08-30 12:06:28.935 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:29.682 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:29.682 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:29.698 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 68, 262144]
+2025-08-30 12:06:29.842 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 614 (generatedTokens.size now: 69)
+2025-08-30 12:06:29.842 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 16 ---
+2025-08-30 12:06:29.842 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 69
+2025-08-30 12:06:29.842 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 69
+2025-08-30 12:06:29.842 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 69
+2025-08-30 12:06:29.842 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:29.842 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 69]
+2025-08-30 12:06:29.842 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 69]
+2025-08-30 12:06:29.843 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:30.631 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:30.631 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:30.647 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 69, 262144]
+2025-08-30 12:06:30.789 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 3165 (generatedTokens.size now: 70)
+2025-08-30 12:06:30.789 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 17 ---
+2025-08-30 12:06:30.789 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 70
+2025-08-30 12:06:30.789 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 70
+2025-08-30 12:06:30.789 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 70
+2025-08-30 12:06:30.789 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:30.789 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 70]
+2025-08-30 12:06:30.789 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 70]
+2025-08-30 12:06:30.790 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:31.566 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:31.566 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:31.585 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 70, 262144]
+2025-08-30 12:06:31.733 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236761 (generatedTokens.size now: 71)
+2025-08-30 12:06:31.733 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 18 ---
+2025-08-30 12:06:31.733 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 71
+2025-08-30 12:06:31.733 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 71
+2025-08-30 12:06:31.733 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 71
+2025-08-30 12:06:31.733 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:31.733 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 71]
+2025-08-30 12:06:31.733 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 71]
+2025-08-30 12:06:31.734 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:32.545 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:32.545 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:32.567 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 71, 262144]
+2025-08-30 12:06:32.714 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 108 (generatedTokens.size now: 72)
+2025-08-30 12:06:32.714 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 19 ---
+2025-08-30 12:06:32.714 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 72
+2025-08-30 12:06:32.714 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 72
+2025-08-30 12:06:32.714 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 72
+2025-08-30 12:06:32.714 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:32.714 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 72]
+2025-08-30 12:06:32.714 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 72]
+2025-08-30 12:06:32.714 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:33.513 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:33.513 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:33.532 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 72, 262144]
+2025-08-30 12:06:33.675 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236777 (generatedTokens.size now: 73)
+2025-08-30 12:06:33.675 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 20 ---
+2025-08-30 12:06:33.675 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 73
+2025-08-30 12:06:33.675 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 73
+2025-08-30 12:06:33.675 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 73
+2025-08-30 12:06:33.675 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:33.675 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 73]
+2025-08-30 12:06:33.675 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 73]
+2025-08-30 12:06:33.675 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:34.502 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:34.503 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:34.521 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 73, 262144]
+2025-08-30 12:06:34.665 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236789 (generatedTokens.size now: 74)
+2025-08-30 12:06:34.665 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 21 ---
+2025-08-30 12:06:34.665 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 74
+2025-08-30 12:06:34.665 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 74
+2025-08-30 12:06:34.665 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 74
+2025-08-30 12:06:34.665 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:34.665 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 74]
+2025-08-30 12:06:34.665 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 74]
+2025-08-30 12:06:34.665 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:35.476 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:35.476 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:35.496 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 74, 262144]
+2025-08-30 12:06:35.643 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236757 (generatedTokens.size now: 75)
+2025-08-30 12:06:35.643 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 22 ---
+2025-08-30 12:06:35.643 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 75
+2025-08-30 12:06:35.643 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 75
+2025-08-30 12:06:35.643 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 75
+2025-08-30 12:06:35.643 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:35.643 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 75]
+2025-08-30 12:06:35.643 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 75]
+2025-08-30 12:06:35.644 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:36.490 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:36.491 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:36.511 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 75, 262144]
+2025-08-30 12:06:36.661 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 28496 (generatedTokens.size now: 76)
+2025-08-30 12:06:36.661 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 23 ---
+2025-08-30 12:06:36.661 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 76
+2025-08-30 12:06:36.661 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 76
+2025-08-30 12:06:36.661 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 76
+2025-08-30 12:06:36.661 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:36.661 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 76]
+2025-08-30 12:06:36.661 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 76]
+2025-08-30 12:06:36.661 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:37.525 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:37.525 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:37.545 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 76, 262144]
+2025-08-30 12:06:37.694 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 506 (generatedTokens.size now: 77)
+2025-08-30 12:06:37.694 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 24 ---
+2025-08-30 12:06:37.694 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 77
+2025-08-30 12:06:37.694 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 77
+2025-08-30 12:06:37.694 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 77
+2025-08-30 12:06:37.694 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:37.694 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 77]
+2025-08-30 12:06:37.694 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 77]
+2025-08-30 12:06:37.695 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:38.582 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:38.582 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:38.601 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 77, 262144]
+2025-08-30 12:06:38.749 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 8289 (generatedTokens.size now: 78)
+2025-08-30 12:06:38.750 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 25 ---
+2025-08-30 12:06:38.750 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 78
+2025-08-30 12:06:38.750 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 78
+2025-08-30 12:06:38.750 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 78
+2025-08-30 12:06:38.750 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:38.750 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 78]
+2025-08-30 12:06:38.750 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 78]
+2025-08-30 12:06:38.750 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:39.652 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:39.652 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:39.672 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 78, 262144]
+2025-08-30 12:06:39.818 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 2165 (generatedTokens.size now: 79)
+2025-08-30 12:06:39.818 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 26 ---
+2025-08-30 12:06:39.818 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 79
+2025-08-30 12:06:39.818 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 79
+2025-08-30 12:06:39.818 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 79
+2025-08-30 12:06:39.818 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:39.818 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 79]
+2025-08-30 12:06:39.818 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 79]
+2025-08-30 12:06:39.818 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:40.703 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:40.703 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:40.723 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 79, 262144]
+2025-08-30 12:06:40.864 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236758 (generatedTokens.size now: 80)
+2025-08-30 12:06:40.864 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 27 ---
+2025-08-30 12:06:40.864 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 80
+2025-08-30 12:06:40.864 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 80
+2025-08-30 12:06:40.864 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 80
+2025-08-30 12:06:40.864 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:40.864 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 80]
+2025-08-30 12:06:40.864 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 80]
+2025-08-30 12:06:40.864 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:41.732 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:41.732 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:41.753 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 80, 262144]
+2025-08-30 12:06:41.898 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 1775 (generatedTokens.size now: 81)
+2025-08-30 12:06:41.898 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 28 ---
+2025-08-30 12:06:41.898 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 81
+2025-08-30 12:06:41.898 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 81
+2025-08-30 12:06:41.898 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 81
+2025-08-30 12:06:41.898 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:41.898 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 81]
+2025-08-30 12:06:41.898 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 81]
+2025-08-30 12:06:41.899 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:42.815 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:42.815 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:42.836 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 81, 262144]
+2025-08-30 12:06:42.984 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236772 (generatedTokens.size now: 82)
+2025-08-30 12:06:42.984 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 29 ---
+2025-08-30 12:06:42.984 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 82
+2025-08-30 12:06:42.984 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 82
+2025-08-30 12:06:42.984 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 82
+2025-08-30 12:06:42.984 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:42.984 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 82]
+2025-08-30 12:06:42.984 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 82]
+2025-08-30 12:06:42.985 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:43.910 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:43.910 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:43.931 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 82, 262144]
+2025-08-30 12:06:44.078 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 40435 (generatedTokens.size now: 83)
+2025-08-30 12:06:44.078 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 30 ---
+2025-08-30 12:06:44.078 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 83
+2025-08-30 12:06:44.078 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 83
+2025-08-30 12:06:44.078 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 83
+2025-08-30 12:06:44.078 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:44.078 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 83]
+2025-08-30 12:06:44.078 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 83]
+2025-08-30 12:06:44.079 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:45.000 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:45.000 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:45.022 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 83, 262144]
+2025-08-30 12:06:45.169 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236929 (generatedTokens.size now: 84)
+2025-08-30 12:06:45.169 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 31 ---
+2025-08-30 12:06:45.169 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 84
+2025-08-30 12:06:45.169 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 84
+2025-08-30 12:06:45.169 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 84
+2025-08-30 12:06:45.169 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:45.169 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 84]
+2025-08-30 12:06:45.169 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 84]
+2025-08-30 12:06:45.169 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:46.097 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:46.097 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:46.119 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 84, 262144]
+2025-08-30 12:06:46.267 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 532 (generatedTokens.size now: 85)
+2025-08-30 12:06:46.267 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 32 ---
+2025-08-30 12:06:46.267 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 85
+2025-08-30 12:06:46.267 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 85
+2025-08-30 12:06:46.267 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 85
+2025-08-30 12:06:46.267 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:46.267 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 85]
+2025-08-30 12:06:46.267 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 85]
+2025-08-30 12:06:46.267 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:47.208 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:47.208 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:47.230 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 85, 262144]
+2025-08-30 12:06:47.379 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 625 (generatedTokens.size now: 86)
+2025-08-30 12:06:47.379 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 33 ---
+2025-08-30 12:06:47.379 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 86
+2025-08-30 12:06:47.379 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 86
+2025-08-30 12:06:47.379 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 86
+2025-08-30 12:06:47.379 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:47.379 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 86]
+2025-08-30 12:06:47.379 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 86]
+2025-08-30 12:06:47.379 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:48.351 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:48.351 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:48.375 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 86, 262144]
+2025-08-30 12:06:48.523 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236789 (generatedTokens.size now: 87)
+2025-08-30 12:06:48.523 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 34 ---
+2025-08-30 12:06:48.524 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 87
+2025-08-30 12:06:48.524 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 87
+2025-08-30 12:06:48.524 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 87
+2025-08-30 12:06:48.524 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:48.524 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 87]
+2025-08-30 12:06:48.524 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 87]
+2025-08-30 12:06:48.524 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:49.523 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:49.523 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:49.549 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 87, 262144]
+2025-08-30 12:06:49.697 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236751 (generatedTokens.size now: 88)
+2025-08-30 12:06:49.697 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 35 ---
+2025-08-30 12:06:49.697 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 88
+2025-08-30 12:06:49.697 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 88
+2025-08-30 12:06:49.697 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 88
+2025-08-30 12:06:49.697 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:49.697 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 88]
+2025-08-30 12:06:49.697 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 88]
+2025-08-30 12:06:49.697 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:50.690 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:50.690 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:50.723 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 88, 262144]
+2025-08-30 12:06:50.874 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 6295 (generatedTokens.size now: 89)
+2025-08-30 12:06:50.874 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 36 ---
+2025-08-30 12:06:50.874 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 89
+2025-08-30 12:06:50.874 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 89
+2025-08-30 12:06:50.874 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 89
+2025-08-30 12:06:50.874 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:50.874 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 89]
+2025-08-30 12:06:50.874 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 89]
+2025-08-30 12:06:50.874 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:51.911 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:51.911 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:51.943 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 89, 262144]
+2025-08-30 12:06:52.092 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 786 (generatedTokens.size now: 90)
+2025-08-30 12:06:52.092 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 37 ---
+2025-08-30 12:06:52.092 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 90
+2025-08-30 12:06:52.092 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 90
+2025-08-30 12:06:52.092 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 90
+2025-08-30 12:06:52.092 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:52.092 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 90]
+2025-08-30 12:06:52.092 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 90]
+2025-08-30 12:06:52.093 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:53.114 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:53.114 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:53.157 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 90, 262144]
+2025-08-30 12:06:53.310 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 614 (generatedTokens.size now: 91)
+2025-08-30 12:06:53.311 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 38 ---
+2025-08-30 12:06:53.311 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 91
+2025-08-30 12:06:53.311 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 91
+2025-08-30 12:06:53.311 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 91
+2025-08-30 12:06:53.311 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:53.311 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 91]
+2025-08-30 12:06:53.311 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 91]
+2025-08-30 12:06:53.311 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:54.363 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:54.363 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:54.427 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 91, 262144]
+2025-08-30 12:06:54.579 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 3165 (generatedTokens.size now: 92)
+2025-08-30 12:06:54.579 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 39 ---
+2025-08-30 12:06:54.579 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 92
+2025-08-30 12:06:54.579 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 92
+2025-08-30 12:06:54.579 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 92
+2025-08-30 12:06:54.579 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:54.579 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 92]
+2025-08-30 12:06:54.579 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 92]
+2025-08-30 12:06:54.580 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:55.652 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:55.652 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:55.705 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 92, 262144]
+2025-08-30 12:06:55.857 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236761 (generatedTokens.size now: 93)
+2025-08-30 12:06:55.857 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 40 ---
+2025-08-30 12:06:55.857 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 93
+2025-08-30 12:06:55.857 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 93
+2025-08-30 12:06:55.857 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 93
+2025-08-30 12:06:55.857 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:55.857 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 93]
+2025-08-30 12:06:55.857 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 93]
+2025-08-30 12:06:55.858 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:57.459 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:57.459 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:57.551 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 93, 262144]
+2025-08-30 12:06:57.575 10417-10423 com.memstory            com.memstory                         I  Background concurrent mark compact GC freed 26MB AllocSpace bytes, 93(93MB) LOS objects, 27% free, 123MB/171MB, paused 1.303ms,1.858ms total 114.899ms
+2025-08-30 12:06:57.782 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 108 (generatedTokens.size now: 94)
+2025-08-30 12:06:57.782 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 41 ---
+2025-08-30 12:06:57.782 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 94
+2025-08-30 12:06:57.782 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 94
+2025-08-30 12:06:57.782 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 94
+2025-08-30 12:06:57.782 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:57.782 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 94]
+2025-08-30 12:06:57.782 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 94]
+2025-08-30 12:06:57.783 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:06:59.402 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:06:59.402 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:06:59.476 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 94, 262144]
+2025-08-30 12:06:59.504 10417-10423 com.memstory            com.memstory                         I  Background concurrent mark compact GC freed 26MB AllocSpace bytes, 94(94MB) LOS objects, 27% free, 125MB/173MB, paused 950us,1.662ms total 101.770ms
+2025-08-30 12:06:59.708 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 8291 (generatedTokens.size now: 95)
+2025-08-30 12:06:59.708 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 42 ---
+2025-08-30 12:06:59.708 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 95
+2025-08-30 12:06:59.708 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 95
+2025-08-30 12:06:59.708 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 95
+2025-08-30 12:06:59.708 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:06:59.708 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 95]
+2025-08-30 12:06:59.708 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 95]
+2025-08-30 12:06:59.708 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:07:01.346 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:07:01.346 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:07:01.425 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 95, 262144]
+2025-08-30 12:07:01.656 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236789 (generatedTokens.size now: 96)
+2025-08-30 12:07:01.656 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 43 ---
+2025-08-30 12:07:01.656 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 96
+2025-08-30 12:07:01.656 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 96
+2025-08-30 12:07:01.656 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 96
+2025-08-30 12:07:01.656 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:07:01.656 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 96]
+2025-08-30 12:07:01.656 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 96]
+2025-08-30 12:07:01.657 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:07:03.241 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:07:03.241 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:07:03.314 10417-10423 com.memstory            com.memstory                         W  Suspending all threads took: 7.420ms
+2025-08-30 12:07:03.327 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 96, 262144]
+2025-08-30 12:07:03.356 10417-10423 com.memstory            com.memstory                         I  Background concurrent mark compact GC freed 26MB AllocSpace bytes, 96(96MB) LOS objects, 27% free, 127MB/175MB, paused 9.069ms,1.840ms total 112.771ms
+2025-08-30 12:07:03.560 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 236751 (generatedTokens.size now: 97)
+2025-08-30 12:07:03.560 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 44 ---
+2025-08-30 12:07:03.560 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 97
+2025-08-30 12:07:03.560 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 97
+2025-08-30 12:07:03.560 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 97
+2025-08-30 12:07:03.560 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:07:03.560 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 97]
+2025-08-30 12:07:03.560 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 97]
+2025-08-30 12:07:03.561 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:07:04.985 10417-10417 InsetsController        com.memstory                         I  onStateChanged: host=com.memstory/com.memstory.presentation.MainActivity, from=android.view.ViewRootImpl.handleResized:2781, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2340), mDisplayCutout=DisplayCutout{insets=Rect(0, 83 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(515, 0 - 566, 83), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1080 physicalDisplayHeight=2340 density={2.8125} cutoutSpec={M 0,0 H -9.066666666666667 V 29.6 H 9.066666666666667 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}} sideOverrides={}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=113, center=Point(113, 113)}, RoundedCorner{position=TopRight, radius=113, center=Point(967, 113)}, RoundedCorner{position=BottomRight, radius=113, center=Point(967, 2227)}, RoundedCorner{position=BottomLeft, radius=113, center=Point(113, 2227)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2340), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 84) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1440 displayHeight=3120 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {af370001 mType=navigationBars mFrame=[0,2205][1080,2340] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af370004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {af370005 mType=mandatorySystemGestures mFrame=[0,2205][1080,2340] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af370006 mType=tappableElement mFrame=[0,2205][1080,2340] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af370024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,83] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {7940000 mType=statusBars mFrame=[0,0][1080,84] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {7940005 mType=mandatorySystemGestures mFrame=[0,0][1080,117] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {7940006 mType=tappableElement mFrame=[0,0][1080,84] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null} }
+2025-08-30 12:07:04.987 10417-10417 VRI[MainAc...y]@251da94 com.memstory                         I  handleResized, frames=ClientWindowFrames{frame=[0,0][1080,2340] display=[0,0][1080,2340] parentFrame=[0,0][0,0]} displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false dragResizingChanged=false
+2025-08-30 12:07:04.988 10417-10417 InputMethodManagerUtils com.memstory                         D  startInputInner - Id : 0
+2025-08-30 12:07:04.988 10417-10417 InputMethodManager      com.memstory                         I  startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+2025-08-30 12:07:04.992 10417-10417 InputTransport          com.memstory                         D  Input channel destroyed: 'ClientS', fd=145
+2025-08-30 12:07:04.994 10417-10417 InputMethodManagerUtils com.memstory                         D  startInputInner - Id : 0
+2025-08-30 12:07:04.994 10417-10417 InputMethodManager      com.memstory                         I  startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+2025-08-30 12:07:05.269 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:07:05.269 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:07:05.370 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 97, 262144]
+2025-08-30 12:07:05.466 10417-10423 com.memstory            com.memstory                         I  Background concurrent mark compact GC freed 26MB AllocSpace bytes, 97(97MB) LOS objects, 24% free, 149MB/197MB, paused 5.307ms,7.786ms total 195.471ms
+2025-08-30 12:07:05.634 10417-10568 OnnxLLMEngine           com.memstory                         D  Added next token: 506 (generatedTokens.size now: 98)
+2025-08-30 12:07:05.636 10417-10568 OnnxLLMEngine           com.memstory                         D  --- Generation Step 45 ---
+2025-08-30 12:07:05.636 10417-10568 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 98
+2025-08-30 12:07:05.636 10417-10568 OnnxLLMEngine           com.memstory                         D  inputIds.size: 98
+2025-08-30 12:07:05.636 10417-10568 OnnxLLMEngine           com.memstory                         D  positionIds.size: 98
+2025-08-30 12:07:05.636 10417-10568 OnnxLLMEngine           com.memstory                         D  Processing tokens: 2,89087,96852,19468,97...
+2025-08-30 12:07:05.638 10417-10568 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 98]
+2025-08-30 12:07:05.638 10417-10568 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 98]
+2025-08-30 12:07:05.640 10417-10568 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference (batch mode with dummy KV cache)...
+2025-08-30 12:07:08.208 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 12:07:08.209 10417-10568 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 12:07:08.311 10417-10568 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 98, 262144]
+2025-08-30 12:07:08.405 10417-10423 com.memstory            com.memstory                         I  Background concurrent mark compact GC freed 26MB AllocSpace bytes, 98(98MB) LOS objects, 24% free, 147MB/195MB, paused 2.142ms,3.804ms total 193.841ms

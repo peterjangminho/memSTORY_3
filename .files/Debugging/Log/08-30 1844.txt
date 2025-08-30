@@ -1,0 +1,175 @@
+2025-08-30 18:44:54.028  7632-7632  com.memstory            com.memstory                         W  Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+                                                                                                    Common causes for lock verification issues are non-optimized dex code
+                                                                                                    and incorrect proguard optimizations.
+2025-08-30 18:44:54.028  7632-7632  com.memstory            com.memstory                         W  Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+2025-08-30 18:44:54.028  7632-7632  com.memstory            com.memstory                         W  Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+2025-08-30 18:44:54.028  7632-7632  com.memstory            com.memstory                         W  Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+2025-08-30 18:44:54.028  7632-7632  com.memstory            com.memstory                         W  Method void androidx.compose.runtime.snapshots.SnapshotStateList.update$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+2025-08-30 18:44:54.062  7632-7632  com.memstory            com.memstory                         E  Unable to open libpenguin.so: dlopen failed: library "libpenguin.so" not found.
+2025-08-30 18:44:54.062  7632-7632  BufferQueueProducer     com.memstory                         I  [](id:1dd000000000,api:0,p:0,c:7632) setDequeueTimeout:2077252342
+2025-08-30 18:44:54.062  7632-7632  BLASTBufferQueue_Java   com.memstory                         I  new BLASTBufferQueue, mName= VRI[MainActivity]@bc0c00 mNativeObject= 0xb400007dde23f810 sc.mNativeObject= 0xb400007ebe23f990 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3390 android.view.ViewRootImpl.relayoutWindow:11355 android.view.ViewRootImpl.performTraversals:4537 android.view.ViewRootImpl.doTraversal:3701 android.view.ViewRootImpl$TraversalRunnable.run:12533 android.view.Choreographer$CallbackRecord.run:1751 android.view.Choreographer$CallbackRecord.run:1760 android.view.Choreographer.doCallbacks:1216 android.view.Choreographer.doFrame:1142 android.view.Choreographer$FrameDisplayEventReceiver.run:1707 
+2025-08-30 18:44:54.062  7632-7632  BLASTBufferQueue_Java   com.memstory                         I  update, w= 1080 h= 2340 mName = VRI[MainActivity]@bc0c00 mNativeObject= 0xb400007dde23f810 sc.mNativeObject= 0xb400007ebe23f990 format= -1 caller= android.graphics.BLASTBufferQueue.<init>:88 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3390 android.view.ViewRootImpl.relayoutWindow:11355 android.view.ViewRootImpl.performTraversals:4537 android.view.ViewRootImpl.doTraversal:3701 android.view.ViewRootImpl$TraversalRunnable.run:12533 
+2025-08-30 18:44:54.062  7632-7632  libc                    com.memstory                         W  Access denied finding property "vendor.gpp.create_frc_extension"
+2025-08-30 18:44:54.062  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         I  Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) relayoutAsync=false req=(1080,2340)0 dur=1 res=0x3 s={true 0xb400007e5e252110} ch=true seqId=0
+2025-08-30 18:44:54.063  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         I  performConfigurationChange setNightDimText nightDimLevel=0
+2025-08-30 18:44:54.063  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         D  mThreadedRenderer.initialize() mSurface={isValid=true 0xb400007e5e252110} hwInitialized=true
+2025-08-30 18:44:54.065  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         D  reportNextDraw android.view.ViewRootImpl.performTraversals:5186 android.view.ViewRootImpl.doTraversal:3701 android.view.ViewRootImpl$TraversalRunnable.run:12533 android.view.Choreographer$CallbackRecord.run:1751 android.view.Choreographer$CallbackRecord.run:1760 
+2025-08-30 18:44:54.065  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         D  Setup new sync=wmsSync-VRI[MainActivity]@bc0c00#0
+2025-08-30 18:44:54.065  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         I  Creating new active sync group VRI[MainActivity]@bc0c00#1
+2025-08-30 18:44:54.066  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         D  registerCallbacksForSync syncBuffer=false
+2025-08-30 18:44:54.067  7632-7661  VRI[MainAc...ty]@bc0c00 com.memstory                         D  Received frameDrawingCallback syncResult=0 frameNum=1.
+2025-08-30 18:44:54.067  7632-7661  VRI[MainAc...ty]@bc0c00 com.memstory                         I  mWNT: t=0xb400007eae34be50 mBlastBufferQueue=0xb400007dde23f810 fn= 1 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$11.onFrameDraw:15025 android.view.ThreadedRenderer$1.onFrameDraw:761 <bottom of call stack> 
+2025-08-30 18:44:54.067  7632-7661  VRI[MainAc...ty]@bc0c00 com.memstory                         I  Setting up sync and frameCommitCallback
+2025-08-30 18:44:54.068  7632-7656  AdrenoUtils             com.memstory                         I  <ReadGpuID:366>: Reading chip ID through GSL
+2025-08-30 18:44:54.083  7632-7641  com.memstory            com.memstory                         I  Compiler allocated 7429KB to compile void android.view.ViewRootImpl.performTraversals()
+2025-08-30 18:44:54.096  7632-7656  BLASTBufferQueue        com.memstory                         I  [VRI[MainActivity]@bc0c00#0](f:0,a:0,s:0) onFrameAvailable the first frame is available
+2025-08-30 18:44:54.096  7632-7656  SurfaceComposerClient   com.memstory                         I  apply transaction with the first frame. layerId: 15496, bufferData(ID: 32779190403075, frameNumber: 1)
+2025-08-30 18:44:54.096  7632-7656  VRI[MainAc...ty]@bc0c00 com.memstory                         I  Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+2025-08-30 18:44:54.096  7632-7656  HWUI                    com.memstory                         D  CFMS:: SetUp Pid : 7632    Tid : 7656
+2025-08-30 18:44:54.096  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         D  reportDrawFinished seqId=0
+2025-08-30 18:44:54.099  7632-7632  InsetsSourceConsumer    com.memstory                         I  applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.memstory/com.memstory.presentation.MainActivity
+2025-08-30 18:44:54.099  7632-7632  InsetsSourceConsumer    com.memstory                         I  applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.memstory/com.memstory.presentation.MainActivity
+2025-08-30 18:44:54.113  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         D  mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007e5e252110}
+2025-08-30 18:44:54.113  7632-7632  InputMethodManagerUtils com.memstory                         D  startInputInner - Id : 0
+2025-08-30 18:44:54.113  7632-7632  InputMethodManager      com.memstory                         I  startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+2025-08-30 18:44:54.116  7632-7653  InputTransport          com.memstory                         D  Input channel constructed: 'ClientS', fd=146
+2025-08-30 18:44:54.121  7632-7632  InsetsSourceConsumer    com.memstory                         I  applyRequestedVisibilityToControl: visible=false, type=ime, host=com.memstory/com.memstory.presentation.MainActivity
+2025-08-30 18:44:54.187  7632-7658  GemmaTokenizer          com.memstory                         D  Loading all 5 tokenizer files...
+2025-08-30 18:44:54.187  7632-7658  GemmaTokenizer          com.memstory                         D  - tokenizer_config.json: ✅
+2025-08-30 18:44:54.187  7632-7658  GemmaTokenizer          com.memstory                         D  - special_tokens_map.json: ✅
+2025-08-30 18:44:54.187  7632-7658  GemmaTokenizer          com.memstory                         D  - generation_config.json: ✅
+2025-08-30 18:44:54.187  7632-7658  GemmaTokenizer          com.memstory                         D  - tokenizer.json: ✅ (vocab)
+2025-08-30 18:44:54.187  7632-7658  GemmaTokenizer          com.memstory                         D  - config.json: ✅ (loaded by OnnxLLMEngine)
+2025-08-30 18:44:54.188  7632-7658  GemmaTokenizer          com.memstory                         D  Config loaded in Java heap: 262144 vocab size
+2025-08-30 18:44:54.188  7632-7658  GemmaTokenizer          com.memstory                         D  Loading vocab mapping for decoding...
+2025-08-30 18:44:54.906  7632-7658  GemmaTokenizer          com.memstory                         D  Loaded 262144 vocab entries for decoding
+2025-08-30 18:44:54.906  7632-7658  GemmaTokenizer          com.memstory                         D  Tokenizer initialized with hybrid memory architecture
+2025-08-30 18:44:54.906  7632-7658  OnnxLLMEngine           com.memstory                         D  Tokenizer loaded with vocab size: 262144
+2025-08-30 18:44:54.906  7632-7658  CompatChangeReporter    com.memstory                         D  Compat change id reported: 312399441; UID 10604; state: ENABLED
+2025-08-30 18:44:54.906  7632-7658  OnnxLLMEngine           com.memstory                         D  Copying 998MB model from assets to internal storage...
+2025-08-30 18:44:54.906  7632-7658  OnnxLLMEngine           com.memstory                         D  Memory strategy: Java heap (configs) + Native heap (model weights + KV cache)
+2025-08-30 18:44:55.243  7632-7658  OnnxLLMEngine           com.memstory                         D  Copied 100MB...
+2025-08-30 18:44:55.579  7632-7658  OnnxLLMEngine           com.memstory                         D  Copied 200MB...
+2025-08-30 18:44:55.914  7632-7658  OnnxLLMEngine           com.memstory                         D  Copied 300MB...
+2025-08-30 18:44:56.051  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         I  ViewPostIme pointer 0
+2025-08-30 18:44:56.056  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         I  call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[MainActivity]@bc0c00
+2025-08-30 18:44:56.101  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         I  ViewPostIme pointer 1
+2025-08-30 18:44:56.119  7632-7632  WindowOnBackDispatcher  com.memstory                         W  OnBackInvokedCallback is not enabled for the application.
+                                                                                                    Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+2025-08-30 18:44:56.264  7632-7658  OnnxLLMEngine           com.memstory                         D  Copied 400MB...
+2025-08-30 18:44:56.603  7632-7658  OnnxLLMEngine           com.memstory                         D  Copied 500MB...
+2025-08-30 18:44:56.937  7632-7658  OnnxLLMEngine           com.memstory                         D  Copied 600MB...
+2025-08-30 18:44:57.259  7632-7658  OnnxLLMEngine           com.memstory                         D  Copied 700MB...
+2025-08-30 18:44:57.584  7632-7658  OnnxLLMEngine           com.memstory                         D  Copied 800MB...
+2025-08-30 18:44:57.905  7632-7658  OnnxLLMEngine           com.memstory                         D  Copied 900MB...
+2025-08-30 18:44:58.069  7632-7658  OnnxLLMEngine           com.memstory                         D  Total copied: 951MB
+2025-08-30 18:44:58.080  7632-7658  OnnxLLMEngine           com.memstory                         D  Model ready for native heap loading: 997769309 bytes
+2025-08-30 18:44:58.504  7632-7658  Manager                 com.memstory                         I  DeviceManager::DeviceManager
+2025-08-30 18:44:58.504  7632-7658  ServerFlag              com.memstory                         W  Failed to parse result of GetServerConfigurableFlag, errno=34
+2025-08-30 18:44:58.504  7632-7658  Manager                 com.memstory                         I  findAvailableDevices
+2025-08-30 18:44:58.504  7632-7658  HidlServiceManagement   com.memstory                         W  hwservicemanager is not supported on the device.
+2025-08-30 18:44:58.504  7632-7658  HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.3::IDevice without hwservicemanager
+2025-08-30 18:44:58.504  7632-7658  HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.2::IDevice without hwservicemanager
+2025-08-30 18:44:58.504  7632-7658  HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.1::IDevice without hwservicemanager
+2025-08-30 18:44:58.504  7632-7658  HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.0::IDevice without hwservicemanager
+2025-08-30 18:44:59.066  7632-7730  ProfileInstaller        com.memstory                         D  Installing profile for com.memstory
+2025-08-30 18:44:59.106  7632-7632  VRI[MainAc...ty]@bc0c00 com.memstory                         I  call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[MainActivity]@bc0c00
+2025-08-30 18:45:02.096  7632-7658  OnnxLLMEngine           com.memstory                         D  ONNX model loaded with NNAPI execution provider (NPU acceleration)
+2025-08-30 18:45:02.096  7632-7658  OnnxLLMEngine           com.memstory                         D  🚀 Initializing Static KV Cache with System Prompt...
+2025-08-30 18:45:02.096  7632-7658  GemmaTokenizer          com.memstory                         D  Encoding text: You are memSTORY, the AI that understands your heart the best.
+                                                                                                    You live entirely on your phone, helping organize thoughts, memories, and ideas.
+                                                                                                    Always be warm, understanding, and helpful. You work completely offline.
+2025-08-30 18:45:02.096  7632-7658  GemmaTokenizer          com.memstory                         D  Encoded to 34 tokens
+2025-08-30 18:45:02.096  7632-7658  OnnxLLMEngine           com.memstory                         D  System prompt tokenized: 34 tokens
+2025-08-30 18:45:02.096  7632-7658  OnnxLLMEngine           com.memstory                         D  System prompt: You are memSTORY, the AI that understands your heart the best.
+                                                                                                    You live entirely on your phone, helping organize thoughts, memories, and ideas.
+                                                                                                    Always be warm, understanding, and helpful. You work completely offline.
+2025-08-30 18:45:02.119  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 0 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.125  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 1 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.130  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 2 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.136  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 3 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.141  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 4 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.147  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 5 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.152  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 6 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.158  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 7 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.163  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 8 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.169  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 9 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.174  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 10 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.180  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 11 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.185  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 12 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.192  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 13 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.197  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 14 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.202  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 15 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.208  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 16 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.213  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 17 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.219  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 18 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.224  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 19 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.229  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 20 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.235  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 21 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.240  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 22 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.245  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 23 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.250  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 24 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.256  7632-7658  OnnxLLMEngine           com.memstory                         V  Layer 25 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:45:02.256  7632-7658  OnnxLLMEngine           com.memstory                         D  🔥 Processing system prompt to initialize KV cache...
+2025-08-30 18:45:02.803  7632-7658  OnnxLLMEngine           com.memstory                         D  ✅ System prompt processed, KV cache populated with 34 tokens
+2025-08-30 18:45:02.803  7632-7658  OnnxLLMEngine           com.memstory                         D  Available outputs: 53
+2025-08-30 18:45:02.813  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[0]: Array
+2025-08-30 18:45:02.813  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[1]: Array
+2025-08-30 18:45:02.814  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[2]: Array
+2025-08-30 18:45:02.814  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[3]: Array
+2025-08-30 18:45:02.814  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[4]: Array
+2025-08-30 18:45:02.814  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[5]: Array
+2025-08-30 18:45:02.815  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[6]: Array
+2025-08-30 18:45:02.815  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[7]: Array
+2025-08-30 18:45:02.815  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[8]: Array
+2025-08-30 18:45:02.815  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[9]: Array
+2025-08-30 18:45:02.816  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[10]: Array
+2025-08-30 18:45:02.816  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[11]: Array
+2025-08-30 18:45:02.816  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[12]: Array
+2025-08-30 18:45:02.817  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[13]: Array
+2025-08-30 18:45:02.817  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[14]: Array
+2025-08-30 18:45:02.817  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[15]: Array
+2025-08-30 18:45:02.818  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[16]: Array
+2025-08-30 18:45:02.818  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[17]: Array
+2025-08-30 18:45:02.818  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[18]: Array
+2025-08-30 18:45:02.818  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[19]: Array
+2025-08-30 18:45:02.819  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[20]: Array
+2025-08-30 18:45:02.819  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[21]: Array
+2025-08-30 18:45:02.819  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[22]: Array
+2025-08-30 18:45:02.820  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[23]: Array
+2025-08-30 18:45:02.820  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[24]: Array
+2025-08-30 18:45:02.820  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[25]: Array
+2025-08-30 18:45:02.820  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[26]: Array
+2025-08-30 18:45:02.821  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[27]: Array
+2025-08-30 18:45:02.821  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[28]: Array
+2025-08-30 18:45:02.821  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[29]: Array
+2025-08-30 18:45:02.821  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[30]: Array
+2025-08-30 18:45:02.821  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[31]: Array
+2025-08-30 18:45:02.821  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[32]: Array
+2025-08-30 18:45:02.822  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[33]: Array
+2025-08-30 18:45:02.822  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[34]: Array
+2025-08-30 18:45:02.822  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[35]: Array
+2025-08-30 18:45:02.822  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[36]: Array
+2025-08-30 18:45:02.822  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[37]: Array
+2025-08-30 18:45:02.822  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[38]: Array
+2025-08-30 18:45:02.823  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[39]: Array
+2025-08-30 18:45:02.823  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[40]: Array
+2025-08-30 18:45:02.823  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[41]: Array
+2025-08-30 18:45:02.823  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[42]: Array
+2025-08-30 18:45:02.823  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[43]: Array
+2025-08-30 18:45:02.823  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[44]: Array
+2025-08-30 18:45:02.823  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[45]: Array
+2025-08-30 18:45:02.824  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[46]: Array
+2025-08-30 18:45:02.824  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[47]: Array
+2025-08-30 18:45:02.824  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[48]: Array
+2025-08-30 18:45:02.824  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[49]: Array
+2025-08-30 18:45:02.824  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[50]: Array
+2025-08-30 18:45:02.824  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[51]: Array
+2025-08-30 18:45:02.824  7632-7658  OnnxLLMEngine           com.memstory                         D    Output[52]: Array
+2025-08-30 18:45:02.825  7632-7658  OnnxLLMEngine           com.memstory                         D  First output type: OnnxTensor
+2025-08-30 18:45:02.825  7632-7658  OnnxLLMEngine           com.memstory                         D  Logits extracted as OnnxTensor, shape: [1, 34, 262144]
+2025-08-30 18:45:02.825  7632-7658  OnnxLLMEngine           com.memstory                         E  Failed to update KV cache for layer 0: float[][][][] cannot be cast to ai.onnxruntime.OnnxTensor
+2025-08-30 18:45:02.825  7632-7658  OnnxLLMEngine           com.memstory                         D  🚀 Static KV Cache initialized successfully
+2025-08-30 18:45:02.825  7632-7658  OnnxLLMEngine           com.memstory                         D  LLM Engine initialization completed
+2025-08-30 18:45:02.825  7632-7658  LLMConversationService  com.memstory                         D  LLM Service initialized successfully
+2025-08-30 18:45:02.825  7632-7658  LLMConversationService  com.memstory                         D  ✅ LLM warm-up completed successfully in 8868ms

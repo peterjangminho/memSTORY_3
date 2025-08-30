@@ -1,0 +1,57 @@
+핵심 결론
+· 568토큰 = (과거 길이 past_len) + (이번 입력 길이 cur_len) 으로 계산되고 있을 가능성이 가장 큼.
+· 첫 대화인데도 past_len이 커지는 이유는 대개 캐시 초기화 실패, 시스템/템플릿 프롬프트의 누적, Position/Cache 스칼라 불일치 중 하나.
+· “단답형인데 512를 넘는” 현상은 (A) 보이지 않는 프롬프트 누적 + (B) KV 캐시 리셋 부재 + (C) 슬라이딩 구현 미적용이 겹친 전형적 패턴.
+
+근본 원인 후보(우선순위순)
+
+– KV 캐시 리셋 누락: 새 대화를 시작해도 past_len·cache.k/v가 그대로 남아 L(past)≫0 상태로 시작.
+지표: 첫 스텝에 past_key/value shape가 [B,H,>0,D]로 찍힘.
+
+– 시스템/템플릿 프롬프트의 은닉 누적: 시스템/메모리 블록, 역할 태그, 특수 토큰(BOS/EOS/role markers)이 매 대화에 중복 접붙.
+지표: 토크나이저에 넣은 문자열 길이는 짧지만 input_ids가 수백 토큰.
+
+– Position/Cache 스칼라 불일치: position_ids를 항상 0..N-1로 만들거나 past_seq_len(혹은 cache_position)을 갱신하지 않아, ORT가 내부 길이를 past_len+cur_len으로 간주.
+지표: feeds 로그에서 position_ids[0]=0인데 past_key는 past_len≫0.
+
+– 엔진 생명주기 문제: 싱글턴/DI 스코프 때문에 프로세스 재사용 시 이전 세션의 KV 버퍼(네이티브 힙)가 잔존. 앱 재설치 전까지 유지되는 경우 있음.
+
+– 슬라이딩 윈도우 미적용: 512 초과 시 과거를 버리지 않아 누적 증가 → 523, 568 등 계단식 증가.
+
+빠른 진단 체크(꼭 로그로 수치 확인)
+· step=0 직전, 다음 항목을 숫자와 shape로 로그
+· input_ids.shape = [B, cur_len] (예: [1, 59])
+· attention_mask.shape = [B, cur_len]
+· past_key.shape/past_value.shape = [B, H_kv, past_len, D] (step0이면 전달 금지 또는 L=1 더미)
+· past_seq_len 또는 cache_position = past_len(step0이면 0)
+· position_ids[0] = past_len(step0이면 0)
+· step 종료 후
+· present_key/value.shape = [B, H_kv, past_len+cur_len, D]
+· generated_tokens 정확한 개수(단위: tokens)
+
+재현 규칙(수식으로 이해)
+· ORT의 어텐션 경로는 보통 유효 길이 = past_len + cur_len을 본다.
+· 따라서 “59을 넣었는데 568로 본다”는 건 past_len≈509토큰이 어딘가에서 유지/복원되고 있음을 의미.
+
+확정 액션(안정화 순서)
+
+– 새 대화 시작 시 무조건 resetCache()
+· past_len=0, cache.k/v=null, 네이티브 버퍼도 0으로 초기화 또는 해제.
+· 첫 스텝은 past 미바인딩(옵셔널) 또는 [B,H,1,D] 더미 + past_seq_len=0(필수 그래프).
+
+– 프롬프트 구성 최소화
+· 시스템/메모리/역할 템플릿을 한 번만 포함.
+· “이전 대화 전체” 자동 접붙 로직을 명시적으로 차단.
+
+– Position/길이 스칼라 일치
+· position_ids = [past_len, past_len+1, …, past_len+cur_len-1]
+· past_seq_len(또는 cache_position) = past_len
+· attention_mask.length = past_len + cur_len (더미 1칸 케이스는 마스크로 차단)
+
+– 512 슬라이딩 윈도우 적용(Gemma 3 룰 반영)
+· if (past_len + cur_len > 512) → 가장 오래된 KV를 버리고 past_len = 512 - cur_len으로 재정렬(슬라이싱/복사).
+· position_ids도 새로운 연속 인덱스로 맞춤.
+
+– 엔진 스코프 정리
+· Activity/Service 종료 시 close()로 모든 OnnxTensor/Result/세션 자원 정리.
+· 싱글턴이면 새 대화 시작 API에서 강제 초기화.

@@ -1,0 +1,13 @@
+1번 질문,
+025-08-30 08:07:52.916  9661-9685  vulkan                  com.memstory                         D  searching for layers in '/data/app/~~OpHr2m1wZJPK-lM8ONRLiQ==/com.memstory-2A9QWUmkQhOHm-2ScqO2tQ==/lib/arm64'
+2025-08-30 08:07:52.916  9661-9685  vulkan                  com.memstory                         D  searching for layers in '/data/app/~~OpHr2m1wZJPK-lM8ONRLiQ==/com.memstory-2A9QWUmkQhOHm-2ScqO2tQ==/base.apk!/lib/arm64-v8a'
+2025-08-30 08:07:52.920  9661-9685  Adreno-AppProfiles      com.memstory                         E  QSPM AIDL service doesn't exist
+2025-08-30 08:07:52.920  9661-9685  AdrenoVK-0              com.memstory                         I  ===== BEGIN DUMP OF OVERRIDDEN SETTINGS =====
+
+
+2번질문,
+025-08-30 08:07:52.989  9661-9661  com.memstory            com.memstory                         W  Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+2025-08-30 08:07:52.989  9661-9661  com.memstory            com.memstory                         W  Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+2025-08-30 08:07:52.989  9661-9661  com.memstory            com.memstory                         W  Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+2025-08-30 08:07:52.989  9661-9661  com.memstory            com.memstory                         W  Method void androidx.compose.runtime.snapshots.SnapshotStateList.update$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+2025-08-30 08:07:53.019  9661-9661  com.memstory            com.memstory                         E  Unable to open libpenguin.so: dlopen failed: library "libpenguin.so" not found.

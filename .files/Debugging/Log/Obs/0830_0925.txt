@@ -1,0 +1,1093 @@
+2025-08-30 09:26:29.698 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX model loaded with NNAPI execution provider (NPU acceleration)
+2025-08-30 09:26:29.698 21268-21623 OnnxLLMEngine           com.memstory                         D  LLM Engine initialization completed
+2025-08-30 09:26:29.698 21268-21623 LLMConversationService  com.memstory                         D  LLM Service initialized successfully
+2025-08-30 09:26:29.699 21268-21623 LLMConversationService  com.memstory                         D  Generating response for: hell
+2025-08-30 09:26:29.699 21268-21623 LLMConversationService  com.memstory                         D  Built prompt with 296 characters
+2025-08-30 09:26:29.699 21268-21623 OnnxLLMEngine           com.memstory                         D  Generating response for: You are memSTORY, a helpful AI assistant that lives entirely on the user's phone. 
+                                                                                                    You help users organize their thoughts, memories, and ideas. Always be friendly, concise, and helpful.
+                                                                                                    Remember that you work completely offline - you have no internet connection.
+                                                                                                    
+                                                                                                    User: hell
+                                                                                                    User: hell
+                                                                                                    memSTORY: 
+2025-08-30 09:26:29.699 21268-21623 GemmaTokenizer          com.memstory                         D  Encoding text: You are memSTORY, a helpful AI assistant that lives entirely on the user's phone. 
+                                                                                                    You help users organize their thoughts, memories, and ideas. Always be friendly, concise, and helpful.
+                                                                                                    Remember that you work completely offline - you have no internet connection.
+                                                                                                    
+                                                                                                    User: hell
+                                                                                                    User: hell
+                                                                                                    memSTORY: 
+2025-08-30 09:26:29.699 21268-21623 GemmaTokenizer          com.memstory                         D  Encoded to 48 tokens
+2025-08-30 09:26:29.699 21268-21623 OnnxLLMEngine           com.memstory                         D  Input tokenized: 48 tokens
+2025-08-30 09:26:29.699 21268-21623 OnnxLLMEngine           com.memstory                         D  Starting autoregressive generation with NNAPI acceleration
+2025-08-30 09:26:29.699 21268-21623 OnnxLLMEngine           com.memstory                         D  === TOKEN TRACKING DEBUG START ===
+2025-08-30 09:26:29.699 21268-21623 OnnxLLMEngine           com.memstory                         D  Input token count: 48
+2025-08-30 09:26:29.699 21268-21623 OnnxLLMEngine           com.memstory                         D  Input token IDs: 2,89087,96852,19468,97,256668,2088,94942,150951,224519...
+2025-08-30 09:26:29.699 21268-21623 OnnxLLMEngine           com.memstory                         D  Max generation tokens: 512
+2025-08-30 09:26:29.699 21268-21623 OnnxLLMEngine           com.memstory                         D  Initial generatedTokens size: 48
+2025-08-30 09:26:29.699 21268-21623 OnnxLLMEngine           com.memstory                         D  Gemma 3 1B generation: sliding_window=512, pattern=6, cache=hybrid
+2025-08-30 09:26:29.699 21268-21623 OnnxLLMEngine           com.memstory                         D  Model config: vocab=262144, layers=26, heads=4, kv_heads=1
+2025-08-30 09:26:29.699 21268-21623 OnnxLLMEngine           com.memstory                         D  Starting fresh KV cache for new generation (prevent token accumulation)
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  --- Generation Step 1 ---
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 48
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  windowedTokens.size: 48
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  inputIds.size: 48
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  positionIds.size: 48
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  First 5 inputIds: 2,89087,96852,19468,97
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 48]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 48]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  KV Cache shapes before inference:
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.key: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.value: [1, 1, 1, 256]
+2025-08-30 09:26:29.702 21268-21623 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference...
+2025-08-30 09:26:30.316 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 09:26:30.317 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 09:26:30.317 21268-21623 OnnxLLMEngine           com.memstory                         D  Successfully retrieved 53 outputs from ONNX Runtime
+2025-08-30 09:26:30.332 21268-21623 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 48, 262144]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Added next token: 236789 (generatedTokens.size now: 49)
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Updating KV cache with new outputs...
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 0 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 1 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 2 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 3 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 4 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 5 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 6 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 7 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 8 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 9 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 10 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 11 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 12 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 13 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 14 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 15 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 16 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 17 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 18 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 19 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 20 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 21 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 22 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 23 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 24 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 25 KV cache shapes - Key: [1, 1, 49, 256], Value: [1, 1, 49, 256]
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  First inference completed, switching from dummy to actual KV cache
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  --- Generation Step 2 ---
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 49
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  windowedTokens.size: 49
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  inputIds.size: 49
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  positionIds.size: 49
+2025-08-30 09:26:30.507 21268-21623 OnnxLLMEngine           com.memstory                         D  First 5 inputIds: 2,89087,96852,19468,97
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 49]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 49]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  KV Cache shapes before inference:
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.key: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.value: [1, 1, 49, 256]
+2025-08-30 09:26:30.508 21268-21623 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference...
+2025-08-30 09:26:31.075 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 09:26:31.075 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 09:26:31.075 21268-21623 OnnxLLMEngine           com.memstory                         D  Successfully retrieved 53 outputs from ONNX Runtime
+2025-08-30 09:26:31.088 21268-21623 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 49, 262144]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Added next token: 236751 (generatedTokens.size now: 50)
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Updating KV cache with new outputs...
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 0 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 1 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 2 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 3 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 4 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 5 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 6 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 7 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 8 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 9 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 10 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 11 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 12 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 13 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 14 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 15 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 16 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 17 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 18 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 19 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 20 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 21 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 22 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 23 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 24 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 25 KV cache shapes - Key: [1, 1, 98, 256], Value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  --- Generation Step 3 ---
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 50
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  windowedTokens.size: 50
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  inputIds.size: 50
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  positionIds.size: 50
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  First 5 inputIds: 2,89087,96852,19468,97
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 50]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 50]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  KV Cache shapes before inference:
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.key: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.value: [1, 1, 98, 256]
+2025-08-30 09:26:31.224 21268-21623 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference...
+2025-08-30 09:26:31.801 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 09:26:31.801 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 09:26:31.801 21268-21623 OnnxLLMEngine           com.memstory                         D  Successfully retrieved 53 outputs from ONNX Runtime
+2025-08-30 09:26:31.816 21268-21623 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 50, 262144]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Added next token: 108 (generatedTokens.size now: 51)
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Updating KV cache with new outputs...
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 0 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 1 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 2 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 3 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 4 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 5 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 6 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 7 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 8 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 9 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 10 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 11 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 12 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 13 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 14 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 15 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 16 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 17 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 18 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 19 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 20 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 21 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 22 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 23 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 24 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 25 KV cache shapes - Key: [1, 1, 148, 256], Value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  --- Generation Step 4 ---
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 51
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  windowedTokens.size: 51
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  inputIds.size: 51
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  positionIds.size: 51
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  First 5 inputIds: 2,89087,96852,19468,97
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 51]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 51]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  KV Cache shapes before inference:
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.952 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.key: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.value: [1, 1, 148, 256]
+2025-08-30 09:26:31.953 21268-21623 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference...
+2025-08-30 09:26:32.540 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 09:26:32.540 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 09:26:32.540 21268-21623 OnnxLLMEngine           com.memstory                         D  Successfully retrieved 53 outputs from ONNX Runtime
+2025-08-30 09:26:32.555 21268-21623 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 51, 262144]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Added next token: 1018 (generatedTokens.size now: 52)
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Updating KV cache with new outputs...
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 0 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 1 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 2 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 3 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 4 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 5 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 6 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 7 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 8 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 9 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 10 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 11 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 12 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 13 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 14 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 15 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 16 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 17 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 18 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 19 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 20 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 21 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 22 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 23 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 24 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 25 KV cache shapes - Key: [1, 1, 199, 256], Value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  --- Generation Step 5 ---
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 52
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  windowedTokens.size: 52
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  inputIds.size: 52
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  positionIds.size: 52
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  First 5 inputIds: 2,89087,96852,19468,97
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 52]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 52]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  KV Cache shapes before inference:
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.693 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.key: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.value: [1, 1, 199, 256]
+2025-08-30 09:26:32.694 21268-21623 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference...
+2025-08-30 09:26:33.291 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 09:26:33.291 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 09:26:33.291 21268-21623 OnnxLLMEngine           com.memstory                         D  Successfully retrieved 53 outputs from ONNX Runtime
+2025-08-30 09:26:33.306 21268-21623 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 52, 262144]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Added next token: 67830 (generatedTokens.size now: 53)
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Updating KV cache with new outputs...
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 0 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 1 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 2 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 3 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 4 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 5 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 6 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 7 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 8 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 9 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 10 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 11 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 12 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 13 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 14 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 15 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 16 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 17 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 18 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 19 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 20 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 21 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 22 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 23 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 24 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 25 KV cache shapes - Key: [1, 1, 251, 256], Value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  --- Generation Step 6 ---
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 53
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  windowedTokens.size: 53
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  inputIds.size: 53
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  positionIds.size: 53
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  First 5 inputIds: 2,89087,96852,19468,97
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 53]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 53]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  KV Cache shapes before inference:
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.444 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.key: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.value: [1, 1, 251, 256]
+2025-08-30 09:26:33.445 21268-21623 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference...
+2025-08-30 09:26:34.071 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 09:26:34.071 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 09:26:34.071 21268-21623 OnnxLLMEngine           com.memstory                         D  Successfully retrieved 53 outputs from ONNX Runtime
+2025-08-30 09:26:34.084 21268-21623 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 53, 262144]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Added next token: 53121 (generatedTokens.size now: 54)
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Updating KV cache with new outputs...
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 0 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 1 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 2 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 3 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 4 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 5 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 6 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 7 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 8 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 9 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 10 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 11 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 12 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 13 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 14 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 15 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 16 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 17 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 18 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 19 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 20 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 21 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 22 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 23 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 24 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 25 KV cache shapes - Key: [1, 1, 304, 256], Value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  --- Generation Step 7 ---
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 54
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  windowedTokens.size: 54
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  inputIds.size: 54
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  positionIds.size: 54
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  First 5 inputIds: 2,89087,96852,19468,97
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 54]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 54]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  KV Cache shapes before inference:
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.key: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.value: [1, 1, 304, 256]
+2025-08-30 09:26:34.218 21268-21623 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference...
+2025-08-30 09:26:34.853 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 09:26:34.853 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 09:26:34.853 21268-21623 OnnxLLMEngine           com.memstory                         D  Successfully retrieved 53 outputs from ONNX Runtime
+2025-08-30 09:26:34.866 21268-21623 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 54, 262144]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Added next token: 108 (generatedTokens.size now: 55)
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Updating KV cache with new outputs...
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 0 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 1 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 2 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 3 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 4 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 5 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 6 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 7 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 8 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 9 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 10 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 11 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 12 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 13 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 14 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 15 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 16 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 17 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 18 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 19 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 20 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 21 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 22 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 23 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 24 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 25 KV cache shapes - Key: [1, 1, 358, 256], Value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  --- Generation Step 8 ---
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 55
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  windowedTokens.size: 55
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  inputIds.size: 55
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  positionIds.size: 55
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  First 5 inputIds: 2,89087,96852,19468,97
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 55]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 55]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  KV Cache shapes before inference:
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.key: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.value: [1, 1, 358, 256]
+2025-08-30 09:26:35.004 21268-21623 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference...
+2025-08-30 09:26:35.675 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 09:26:35.675 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 09:26:35.675 21268-21623 OnnxLLMEngine           com.memstory                         D  Successfully retrieved 53 outputs from ONNX Runtime
+2025-08-30 09:26:35.693 21268-21623 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 55, 262144]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Added next token: 818 (generatedTokens.size now: 56)
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Updating KV cache with new outputs...
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 0 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 1 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 2 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 3 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 4 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 5 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 6 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 7 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 8 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 9 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 10 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 11 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 12 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 13 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 14 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 15 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 16 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 17 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 18 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 19 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 20 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 21 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 22 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 23 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 24 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 25 KV cache shapes - Key: [1, 1, 413, 256], Value: [1, 1, 413, 256]
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  --- Generation Step 9 ---
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 56
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  windowedTokens.size: 56
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  inputIds.size: 56
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  positionIds.size: 56
+2025-08-30 09:26:35.834 21268-21623 OnnxLLMEngine           com.memstory                         D  First 5 inputIds: 2,89087,96852,19468,97
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 56]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 56]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  KV Cache shapes before inference:
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.key: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.value: [1, 1, 413, 256]
+2025-08-30 09:26:35.835 21268-21623 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference...
+2025-08-30 09:26:36.506 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 09:26:36.506 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 09:26:36.506 21268-21623 OnnxLLMEngine           com.memstory                         D  Successfully retrieved 53 outputs from ONNX Runtime
+2025-08-30 09:26:36.522 21268-21623 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 56, 262144]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Added next token: 94942 (generatedTokens.size now: 57)
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Updating KV cache with new outputs...
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 0 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 1 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 2 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 3 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 4 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 5 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 6 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 7 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 8 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 9 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 10 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 11 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 12 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 13 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 14 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 15 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 16 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 17 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 18 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 19 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 20 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 21 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 22 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 23 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 24 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 25 KV cache shapes - Key: [1, 1, 469, 256], Value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  --- Generation Step 10 ---
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 57
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  windowedTokens.size: 57
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  inputIds.size: 57
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  positionIds.size: 57
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  First 5 inputIds: 2,89087,96852,19468,97
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 57]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 57]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  KV Cache shapes before inference:
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.key: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.value: [1, 1, 469, 256]
+2025-08-30 09:26:36.662 21268-21623 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference...
+2025-08-30 09:26:37.357 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX inference completed successfully
+2025-08-30 09:26:37.357 21268-21623 OnnxLLMEngine           com.memstory                         D  ONNX outputs count: 53
+2025-08-30 09:26:37.357 21268-21623 OnnxLLMEngine           com.memstory                         D  Successfully retrieved 53 outputs from ONNX Runtime
+2025-08-30 09:26:37.375 21268-21623 OnnxLLMEngine           com.memstory                         D  Logits shape: [1, 57, 262144]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Added next token: 236764 (generatedTokens.size now: 58)
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Updating KV cache with new outputs...
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 0 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 1 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 2 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 3 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 4 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 5 KV cache shapes - Key: [1, 1, 526, 256], Value: [1, 1, 526, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 6 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 7 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 8 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 9 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 10 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 11 KV cache shapes - Key: [1, 1, 526, 256], Value: [1, 1, 526, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 12 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 13 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 14 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 15 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 16 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 17 KV cache shapes - Key: [1, 1, 526, 256], Value: [1, 1, 526, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 18 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 19 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 20 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 21 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 22 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 23 KV cache shapes - Key: [1, 1, 526, 256], Value: [1, 1, 526, 256]
+2025-08-30 09:26:37.511 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 24 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  Layer 25 KV cache shapes - Key: [1, 1, 512, 256], Value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  --- Generation Step 11 ---
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  generatedTokens.size: 58
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  windowedTokens.size: 58
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  inputIds.size: 58
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  positionIds.size: 58
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  First 5 inputIds: 2,89087,96852,19468,97
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  inputTensor shape: [1, 58]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  positionTensor shape: [1, 58]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  KV Cache shapes before inference:
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.0.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.1.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.2.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.3.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.4.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.key: [1, 1, 526, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.5.value: [1, 1, 526, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.6.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.7.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.8.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.9.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.10.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.key: [1, 1, 526, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.11.value: [1, 1, 526, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.12.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.13.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.14.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.15.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.16.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.key: [1, 1, 526, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.17.value: [1, 1, 526, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.18.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.19.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.20.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.21.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.22.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.key: [1, 1, 526, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.23.value: [1, 1, 526, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.24.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.key: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  past_key_values.25.value: [1, 1, 512, 256]
+2025-08-30 09:26:37.512 21268-21623 OnnxLLMEngine           com.memstory                         D  Calling ONNX Runtime inference...
+2025-08-30 09:26:37.649 21268-21623 onnxruntime             com.memstory                         E   [E:onnxruntime:, sequential_executor.cc:572 ExecuteKernel] Non-zero status code returned while running Cast node. Name:'past_key_values.5.value_fp16' Status Message: /onnxruntime_src/onnxruntime/core/framework/op_kernel.cc:83 virtual OrtValue *onnxruntime::OpKernelContext::OutputMLValue(int, const TensorShape &) status.IsOK() was false. Shape mismatch attempting to re-use buffer. {1,1,512,256} != {1,1,526,256}. Validate usage of dim_value (values should be > 0) and dim_param (all values with the same string should equate to the same size) in shapes in the model.
+2025-08-30 09:26:37.650 21268-21623 OnnxLLMEngine           com.memstory                         E  === ERROR in Generation Step 11 ===
+2025-08-30 09:26:37.650 21268-21623 OnnxLLMEngine           com.memstory                         E  Error type: OrtException
+2025-08-30 09:26:37.650 21268-21623 OnnxLLMEngine           com.memstory                         E  Error message: Error code - ORT_RUNTIME_EXCEPTION - message: Non-zero status code returned while running Cast node. Name:'past_key_values.5.value_fp16' Status Message: /onnxruntime_src/onnxruntime/core/framework/op_kernel.cc:83 virtual OrtValue *onnxruntime::OpKernelContext::OutputMLValue(int, const TensorShape &) status.IsOK() was false. Shape mismatch attempting to re-use buffer. {1,1,512,256} != {1,1,526,256}. Validate usage of dim_value (values should be > 0) and dim_param (all values with the same string should equate to the same size) in shapes in the model.
+2025-08-30 09:26:37.650 21268-21623 OnnxLLMEngine           com.memstory                         E  generatedTokens.size at error: 58
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  ai.onnxruntime.OrtException: Error code - ORT_RUNTIME_EXCEPTION - message: Non-zero status code returned while running Cast node. Name:'past_key_values.5.value_fp16' Status Message: /onnxruntime_src/onnxruntime/core/framework/op_kernel.cc:83 virtual OrtValue *onnxruntime::OpKernelContext::OutputMLValue(int, const TensorShape &) status.IsOK() was false. Shape mismatch attempting to re-use buffer. {1,1,512,256} != {1,1,526,256}. Validate usage of dim_value (values should be > 0) and dim_param (all values with the same string should equate to the same size) in shapes in the model.
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at ai.onnxruntime.OrtSession.run(Native Method)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at ai.onnxruntime.OrtSession.run(OrtSession.java:422)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at ai.onnxruntime.OrtSession.run(OrtSession.java:269)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at ai.onnxruntime.OrtSession.run(OrtSession.java:237)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at com.memstory.llm.OnnxLLMEngine$generateTokens$2.invokeSuspend(OnnxLLMEngine.kt:231)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at com.memstory.llm.OnnxLLMEngine$generateTokens$2.invoke(Unknown Source:8)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at com.memstory.llm.OnnxLLMEngine$generateTokens$2.invoke(Unknown Source:4)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:61)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:163)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source:1)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at com.memstory.llm.OnnxLLMEngine.generateTokens(OnnxLLMEngine.kt:157)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at com.memstory.llm.OnnxLLMEngine.generateTokens$default(OnnxLLMEngine.kt:152)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at com.memstory.llm.OnnxLLMEngine$generateResponse$2.invokeSuspend(OnnxLLMEngine.kt:123)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at com.memstory.llm.OnnxLLMEngine$generateResponse$2.invoke(Unknown Source:8)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at com.memstory.llm.OnnxLLMEngine$generateResponse$2.invoke(Unknown Source:4)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:61)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:163)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source:1)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at com.memstory.llm.OnnxLLMEngine.generateResponse(OnnxLLMEngine.kt:112)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at com.memstory.llm.LLMConversationService$generateResponse$2.invokeSuspend(LLMConversationService.kt:112)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:585)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:802)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:706)
+2025-08-30 09:26:37.650 21268-21623 System.err              com.memstory                         W  	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:693)
+2025-08-30 09:26:37.651 21268-21623 OnnxLLMEngine           com.memstory                         D  === TOKEN TRACKING DEBUG END ===
+2025-08-30 09:26:37.651 21268-21623 OnnxLLMEngine           com.memstory                         D  Final token count: 58
+2025-08-30 09:26:37.651 21268-21623 OnnxLLMEngine           com.memstory                         D  Original input tokens: 48
+2025-08-30 09:26:37.651 21268-21623 OnnxLLMEngine           com.memstory                         D  Generated new tokens: 10
+2025-08-30 09:26:37.651 21268-21623 OnnxLLMEngine           com.memstory                         D  Last 5 generated tokens: 53121,108,818,94942,236764
+2025-08-30 09:26:37.651 21268-21623 GemmaTokenizer          com.memstory                         D  Decoding 10 tokens
+2025-08-30 09:26:37.651 21268-21623 GemmaTokenizer          com.memstory                         D  Decoded text: 's
+                                                                                                    
+                                                                                                    **Translation:**
+                                                                                                    
+                                                                                                    The Michelin,
+2025-08-30 09:26:37.652 21268-21623 OnnxLLMEngine           com.memstory                         D  Generation completed:
+                                                                                                    - Input tokens: 48
+                                                                                                    - Generated tokens: 10
+                                                                                                    - Total conversation tokens: 58
+                                                                                                    - KV cache size: 1.4726562MB
+2025-08-30 09:26:37.652 21268-21623 OnnxLLMEngine           com.memstory                         D  Response generated: 's
+                                                                                                    
+                                                                                                    **Translation:**
+                                                                                                    
+                                                                                                    The Michelin,
+2025-08-30 09:26:37.652 21268-21623 LLMConversationService  com.memstory                         D  Generated response in 7953ms: 's
+                                                                                                    
+                                                                                                    **Translation:**
+                                                                                                    
+                                                                                                    The Michelin,

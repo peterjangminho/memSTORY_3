@@ -1,0 +1,65 @@
+  1️⃣ NNAPI 개선사항 ✅ 부분 적용
+
+  - ✅ ONNX Runtime 1.22.0: 정확히 사용 중
+  - ✅ NNAPIFlags.USE_FP16: 적용됨
+  - ✅ NNAPIFlags.SUSTAINED_SPEED: 적용됨
+  - 🚨 문제점: setOptimizationLevel과 setGraphOptimizationLevel이 중복
+  호출됨
+
+  2️⃣ KV 캐시 최적화 ❌ 잘못 구현됨
+
+  - ❌ KV 캐시 Shape 오류: 현재 Array(batch) { Array(heads) { Array(seq) {
+   FloatArray(dim) } } }
+  - ❌ ONNX Runtime 표준: [batch_size, seq_len, num_heads, head_dim] 또는
+  [batch_size, num_heads, seq_len, head_dim]
+  - ❌ 실제 모델 입출력과 불일치: past_key_values 텐서 형태가 틀림
+  - ✅ GQA 설정: num_key_value_heads=1 올바름
+
+  3️⃣ 메모리 관리 ⚠️ 기본적으로만 적용
+
+  - ✅ 주기적 GC: 20스텝마다 System.gc() 호출
+  - ✅ 리소스 정리: cleanup() 메서드 구현
+  - ✅ Sliding Window: 구현되어 있음
+  - ⚠️ 문제점: Sliding Window 구현이 실제로는 빈 구현임
+
+  🚨 발견된 주요 문제점들
+
+  문제 1: SessionOptions 중복 설정
+
+  sessionOptions.setOptimizationLevel(OrtSession.SessionOptions.OptLevel.A
+  LL_OPT)
+  // 🚨 중복!
+  sessionOptions.setGraphOptimizationLevel(OrtSession.SessionOptions.OptLe
+  vel.ALL_OPT)
+
+  문제 2: KV 캐시 Shape 오류
+
+  // 🚨 현재 (잘못된 형태)
+  Array(1) { Array(modelConfig.num_key_value_heads) {
+      Array(maxStaticCacheLength) { FloatArray(modelConfig.head_dim) }
+  }}
+
+  // ✅ 올바른 형태 (ONNX Runtime 표준)
+  // [batch_size, seq_len, num_heads, head_dim] 또는
+  // [batch_size, num_heads, seq_len, head_dim]
+
+  문제 3: Sliding Window 빈 구현
+
+  private fun slideKVCache() {
+      // 🚨 실제로는 아무것도 안 함 - 새 캐시만 생성
+      val newKeyCache = OnnxTensor.createTensor(...)
+      // 기존 데이터를 새 캐시로 복사하는 로직 없음!
+  }
+
+  💡 결론
+
+  ONNX Runtime 1.22.0의 3가지 주요 개선사항 중 실제로는 일부만 제대로
+  적용되어 있습니다:
+
+  1. NNAPI 개선 ✅ 70% 적용 (중복 설정 문제 있음)
+  2. KV 캐시 최적화 ❌ 20% 적용 (핵심 Shape 오류)
+  3. 메모리 관리 ⚠️ 50% 적용 (기본 구현만, 실제 최적화 미흡)
+
+  성능 저하와 에러의 주요 원인은 KV 캐시 Shape 불일치일 가능성이 높습니다.
+   ONNX 모델이 기대하는 텐서 형태와 코드에서 제공하는 형태가 다르면 추론
+  실패나 성능 저하가 발생할 수 있습니다.

@@ -1,0 +1,229 @@
+2025-08-30 18:18:31.322  2729-2729  InputMethodManager_LC   com.memstory                         I  notifyImeHidden: IInputMethodManagerGlobalInvoker.hideSoftInput
+2025-08-30 18:18:31.322  2729-2729  ImeTracker              com.memstory                         I  com.memstory:99359574: onHidden
+2025-08-30 18:18:31.324  2729-2780  VRI[MainAc...y]@251da94 com.memstory                         I  mWNT: t=0xb400007eae25d050 mBlastBufferQueue=0xb400007dde23dbf0 fn= 200 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.SyncRtSurfaceTransactionApplier.applyTransaction:96 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0:69 android.view.SyncRtSurfaceTransactionApplier.$r8$lambda$afI4fXg3U3-nBZQEDQMiNy-B06s:0 
+2025-08-30 18:18:31.359  2729-2729  InsetsController        com.memstory                         I  onStateChanged: host=com.memstory/com.memstory.presentation.MainActivity, from=android.view.ViewRootImpl.handleResized:2781, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2340), mDisplayCutout=DisplayCutout{insets=Rect(0, 83 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(515, 0 - 566, 83), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1080 physicalDisplayHeight=2340 density={2.8125} cutoutSpec={M 0,0 H -9.066666666666667 V 29.6 H 9.066666666666667 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}} sideOverrides={}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=113, center=Point(113, 113)}, RoundedCorner{position=TopRight, radius=113, center=Point(967, 113)}, RoundedCorner{position=BottomRight, radius=113, center=Point(967, 2227)}, RoundedCorner{position=BottomLeft, radius=113, center=Point(113, 2227)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2340), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 84) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1440 displayHeight=3120 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {af370001 mType=navigationBars mFrame=[0,2205][1080,2340] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af370004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {af370005 mType=mandatorySystemGestures mFrame=[0,2205][1080,2340] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af370006 mType=tappableElement mFrame=[0,2205][1080,2340] mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {af370024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,83] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {7940000 mType=statusBars mFrame=[0,0][1080,84] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {7940005 mType=mandatorySystemGestures mFrame=[0,0][1080,117] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {7940006 mType=tappableElement mFrame=[0,0][1080,84] mVisible=true mFlags= mSideHint=TOP mBoundingRects=null} }
+2025-08-30 18:18:31.359  2729-2729  VRI[MainAc...y]@251da94 com.memstory                         I  handleResized, frames=ClientWindowFrames{frame=[0,0][1080,2340] display=[0,0][1080,2340] parentFrame=[0,0][0,0]} displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false dragResizingChanged=false
+2025-08-30 18:18:31.616  2729-2744  com.memstory            com.memstory                         I  Background concurrent mark compact GC freed 21MB AllocSpace bytes, 0(0B) LOS objects, 24% free, 151MB/199MB, paused 2.234ms,918us total 142.809ms
+2025-08-30 18:18:31.791  2729-3092  GemmaTokenizer          com.memstory                         D  Loaded 262144 vocab entries for decoding
+2025-08-30 18:18:31.791  2729-3092  GemmaTokenizer          com.memstory                         D  Tokenizer initialized with hybrid memory architecture
+2025-08-30 18:18:31.791  2729-3092  OnnxLLMEngine           com.memstory                         D  Tokenizer loaded with vocab size: 262144
+2025-08-30 18:18:31.791  2729-3092  CompatChangeReporter    com.memstory                         D  Compat change id reported: 312399441; UID 10603; state: ENABLED
+2025-08-30 18:18:31.791  2729-3092  OnnxLLMEngine           com.memstory                         D  Copying 998MB model from assets to internal storage...
+2025-08-30 18:18:31.791  2729-3092  OnnxLLMEngine           com.memstory                         D  Memory strategy: Java heap (configs) + Native heap (model weights + KV cache)
+2025-08-30 18:18:31.935  2729-2744  com.memstory            com.memstory                         I  Background concurrent mark compact GC freed 14MB AllocSpace bytes, 0(0B) LOS objects, 18% free, 207MB/255MB, paused 88us,907us total 226.840ms
+2025-08-30 18:18:32.159  2729-3092  OnnxLLMEngine           com.memstory                         D  Copied 100MB...
+2025-08-30 18:18:32.526  2729-3092  OnnxLLMEngine           com.memstory                         D  Copied 200MB...
+2025-08-30 18:18:32.891  2729-3092  OnnxLLMEngine           com.memstory                         D  Copied 300MB...
+2025-08-30 18:18:33.256  2729-3092  OnnxLLMEngine           com.memstory                         D  Copied 400MB...
+2025-08-30 18:18:33.601  2729-3092  OnnxLLMEngine           com.memstory                         D  Copied 500MB...
+2025-08-30 18:18:33.933  2729-3092  OnnxLLMEngine           com.memstory                         D  Copied 600MB...
+2025-08-30 18:18:33.940  2729-2729  VRI[MainAc...y]@251da94 com.memstory                         I  call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[MainActivity]@251da94
+2025-08-30 18:18:34.254  2729-3092  OnnxLLMEngine           com.memstory                         D  Copied 700MB...
+2025-08-30 18:18:34.578  2729-3092  OnnxLLMEngine           com.memstory                         D  Copied 800MB...
+2025-08-30 18:18:34.899  2729-3092  OnnxLLMEngine           com.memstory                         D  Copied 900MB...
+2025-08-30 18:18:35.067  2729-3092  OnnxLLMEngine           com.memstory                         D  Total copied: 951MB
+2025-08-30 18:18:35.079  2729-3092  OnnxLLMEngine           com.memstory                         D  Model ready for native heap loading: 997769309 bytes
+2025-08-30 18:18:35.535  2729-3092  Manager                 com.memstory                         I  DeviceManager::DeviceManager
+2025-08-30 18:18:35.535  2729-3092  ServerFlag              com.memstory                         W  Failed to parse result of GetServerConfigurableFlag, errno=34
+2025-08-30 18:18:35.535  2729-3092  Manager                 com.memstory                         I  findAvailableDevices
+2025-08-30 18:18:35.536  2729-3092  HidlServiceManagement   com.memstory                         W  hwservicemanager is not supported on the device.
+2025-08-30 18:18:35.536  2729-3092  HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.3::IDevice without hwservicemanager
+2025-08-30 18:18:35.536  2729-3092  HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.2::IDevice without hwservicemanager
+2025-08-30 18:18:35.536  2729-3092  HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.1::IDevice without hwservicemanager
+2025-08-30 18:18:35.536  2729-3092  HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.0::IDevice without hwservicemanager
+2025-08-30 18:18:39.035  2729-3092  OnnxLLMEngine           com.memstory                         D  ONNX model loaded with NNAPI execution provider (NPU acceleration)
+2025-08-30 18:18:39.035  2729-3092  OnnxLLMEngine           com.memstory                         D  🚀 Initializing Static KV Cache with System Prompt...
+2025-08-30 18:18:39.035  2729-3092  GemmaTokenizer          com.memstory                         D  Encoding text: You are memSTORY, the AI that understands your heart the best.
+                                                                                                    You live entirely on your phone, helping organize thoughts, memories, and ideas.
+                                                                                                    Always be warm, understanding, and helpful. You work completely offline.
+2025-08-30 18:18:39.035  2729-3092  GemmaTokenizer          com.memstory                         D  Encoded to 34 tokens
+2025-08-30 18:18:39.035  2729-3092  OnnxLLMEngine           com.memstory                         D  System prompt tokenized: 34 tokens
+2025-08-30 18:18:39.035  2729-3092  OnnxLLMEngine           com.memstory                         D  System prompt: You are memSTORY, the AI that understands your heart the best.
+                                                                                                    You live entirely on your phone, helping organize thoughts, memories, and ideas.
+                                                                                                    Always be warm, understanding, and helpful. You work completely offline.
+2025-08-30 18:18:39.059  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 0 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.065  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 1 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.071  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 2 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.076  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 3 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.082  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 4 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.088  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 5 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.093  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 6 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.099  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 7 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.105  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 8 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.110  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 9 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.116  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 10 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.122  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 11 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.131  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 12 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.136  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 13 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.142  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 14 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.148  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 15 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.154  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 16 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.159  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 17 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.165  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 18 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.171  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 19 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.176  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 20 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.182  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 21 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.187  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 22 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.193  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 23 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.199  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 24 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.205  2729-3092  OnnxLLMEngine           com.memstory                         V  Layer 25 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 18:18:39.205  2729-3092  OnnxLLMEngine           com.memstory                         D  🔥 Processing system prompt to initialize KV cache...
+2025-08-30 18:18:39.752  2729-3092  OnnxLLMEngine           com.memstory                         D  ✅ System prompt processed, KV cache populated with 34 tokens
+2025-08-30 18:18:39.752  2729-3092  OnnxLLMEngine           com.memstory                         D  Available outputs: 53
+2025-08-30 18:18:39.759  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[0]: Array
+2025-08-30 18:18:39.760  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[1]: Array
+2025-08-30 18:18:39.760  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[2]: Array
+2025-08-30 18:18:39.760  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[3]: Array
+2025-08-30 18:18:39.761  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[4]: Array
+2025-08-30 18:18:39.761  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[5]: Array
+2025-08-30 18:18:39.761  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[6]: Array
+2025-08-30 18:18:39.761  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[7]: Array
+2025-08-30 18:18:39.762  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[8]: Array
+2025-08-30 18:18:39.762  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[9]: Array
+2025-08-30 18:18:39.762  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[10]: Array
+2025-08-30 18:18:39.762  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[11]: Array
+2025-08-30 18:18:39.763  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[12]: Array
+2025-08-30 18:18:39.763  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[13]: Array
+2025-08-30 18:18:39.763  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[14]: Array
+2025-08-30 18:18:39.764  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[15]: Array
+2025-08-30 18:18:39.764  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[16]: Array
+2025-08-30 18:18:39.764  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[17]: Array
+2025-08-30 18:18:39.764  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[18]: Array
+2025-08-30 18:18:39.765  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[19]: Array
+2025-08-30 18:18:39.765  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[20]: Array
+2025-08-30 18:18:39.765  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[21]: Array
+2025-08-30 18:18:39.766  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[22]: Array
+2025-08-30 18:18:39.766  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[23]: Array
+2025-08-30 18:18:39.766  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[24]: Array
+2025-08-30 18:18:39.766  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[25]: Array
+2025-08-30 18:18:39.767  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[26]: Array
+2025-08-30 18:18:39.767  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[27]: Array
+2025-08-30 18:18:39.767  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[28]: Array
+2025-08-30 18:18:39.767  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[29]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[30]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[31]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[32]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[33]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[34]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[35]: Array
+2025-08-30 18:18:39.768  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[36]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[37]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[38]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[39]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[40]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[41]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[42]: Array
+2025-08-30 18:18:39.769  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[43]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[44]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[45]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[46]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[47]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[48]: Array
+2025-08-30 18:18:39.770  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[49]: Array
+2025-08-30 18:18:39.771  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[50]: Array
+2025-08-30 18:18:39.771  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[51]: Array
+2025-08-30 18:18:39.771  2729-3092  OnnxLLMEngine           com.memstory                         D    Output[52]: Array
+2025-08-30 18:18:39.778  2729-3092  OnnxLLMEngine           com.memstory                         E  Failed to extract logits from outputs
+2025-08-30 18:18:39.778  2729-3092  OnnxLLMEngine           com.memstory                         D  LLM Engine initialization completed
+2025-08-30 18:18:39.779  2729-3092  LLMConversationService  com.memstory                         D  LLM Service initialized successfully
+2025-08-30 18:18:39.779  2729-3092  LLMConversationService  com.memstory                         D  Generating response for: tell me about korea
+2025-08-30 18:18:39.779  2729-3092  LLMConversationService  com.memstory                         D  Built prompt with 326 characters
+2025-08-30 18:18:39.779  2729-3092  OnnxLLMEngine           com.memstory                         D  Generating response for: You are memSTORY, a helpful AI assistant that lives entirely on the user's phone. 
+                                                                                                    You help users organize their thoughts, memories, and ideas. Always be friendly, concise, and helpful.
+                                                                                                    Remember that you work completely offline - you have no internet connection.
+                                                                                                    
+                                                                                                    User: tell me about korea
+                                                                                                    User: tell me about korea
+                                                                                                    memSTORY: 
+2025-08-30 18:18:39.779  2729-3092  GemmaTokenizer          com.memstory                         D  Encoding text: You are memSTORY, a helpful AI assistant that lives entirely on the user's phone. 
+                                                                                                    You help users organize their thoughts, memories, and ideas. Always be friendly, concise, and helpful.
+                                                                                                    Remember that you work completely offline - you have no internet connection.
+                                                                                                    
+                                                                                                    User: tell me about korea
+                                                                                                    User: tell me about korea
+                                                                                                    memSTORY: 
+2025-08-30 18:18:39.779  2729-3092  GemmaTokenizer          com.memstory                         D  Encoded to 54 tokens
+2025-08-30 18:18:39.779  2729-3092  OnnxLLMEngine           com.memstory                         D  Input tokenized: 54 tokens
+2025-08-30 18:18:39.779  2729-3092  OnnxLLMEngine           com.memstory                         D  Starting autoregressive generation with NNAPI acceleration
+2025-08-30 18:18:39.779  2729-3092  OnnxLLMEngine           com.memstory                         D  === 🚀 STATIC KV CACHE GENERATION ===
+2025-08-30 18:18:39.779  2729-3092  OnnxLLMEngine           com.memstory                         D  System prompt tokens: 34
+2025-08-30 18:18:39.779  2729-3092  OnnxLLMEngine           com.memstory                         D  User input tokens: 54
+2025-08-30 18:18:39.779  2729-3092  OnnxLLMEngine           com.memstory                         D  Total conversation tokens: 88
+2025-08-30 18:18:39.779  2729-3092  OnnxLLMEngine           com.memstory                         D  KV cache position starts at: 34
+2025-08-30 18:18:39.779  2729-3092  OnnxLLMEngine           com.memstory                         D  Gemma 3 1B Static Cache: sliding_window=512, GQA_heads=1
+2025-08-30 18:18:39.779  2729-3092  OnnxLLMEngine           com.memstory                         D  🔥 Processing user input with pre-warmed KV cache...
+2025-08-30 18:18:39.780  2729-3092  OnnxLLMEngine           com.memstory                         D  🔥 STATIC KV INFERENCE: input_ids=54, positions=[34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87]
+2025-08-30 18:18:39.780  2729-3092  OnnxLLMEngine           com.memstory                         D  Cache state: position=88, seq_len=88
+2025-08-30 18:18:40.433  2729-3092  OnnxLLMEngine           com.memstory                         E  Static KV Cache inference failed
+                                                                                                    java.lang.ClassCastException: float[][][] cannot be cast to ai.onnxruntime.OnnxTensor
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine.processStaticKVCacheInference(OnnxLLMEngine.kt:448)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine.access$processStaticKVCacheInference(OnnxLLMEngine.kt:21)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateTokens$2.invokeSuspend(OnnxLLMEngine.kt:350)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateTokens$2.invoke(Unknown Source:8)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateTokens$2.invoke(Unknown Source:4)
+                                                                                                    	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:61)
+                                                                                                    	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:163)
+                                                                                                    	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source:1)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine.generateTokens(OnnxLLMEngine.kt:326)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine.generateTokens$default(OnnxLLMEngine.kt:321)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateResponse$2.invokeSuspend(OnnxLLMEngine.kt:291)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateResponse$2.invoke(Unknown Source:8)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateResponse$2.invoke(Unknown Source:4)
+                                                                                                    	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:61)
+                                                                                                    	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:163)
+                                                                                                    	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source:1)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine.generateResponse(OnnxLLMEngine.kt:280)
+                                                                                                    	at com.memstory.llm.LLMConversationService$generateResponse$2.invokeSuspend(LLMConversationService.kt:112)
+                                                                                                    	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+                                                                                                    	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+                                                                                                    	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+                                                                                                    	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+                                                                                                    	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:585)
+                                                                                                    	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:802)
+                                                                                                    	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:706)
+                                                                                                    	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:693)
+2025-08-30 18:18:40.433  2729-3092  OnnxLLMEngine           com.memstory                         D  --- Generation Step 2 (INCREMENTAL) ---
+2025-08-30 18:18:40.433  2729-3092  OnnxLLMEngine           com.memstory                         D  Processing last token: 84144 at position 87
+2025-08-30 18:18:40.433  2729-3092  OnnxLLMEngine           com.memstory                         D  🔥 STATIC KV INFERENCE: input_ids=1, positions=[88]
+2025-08-30 18:18:40.433  2729-3092  OnnxLLMEngine           com.memstory                         D  Cache state: position=89, seq_len=89
+2025-08-30 18:18:40.624  2729-3092  OnnxLLMEngine           com.memstory                         E  Static KV Cache inference failed
+                                                                                                    java.lang.ClassCastException: float[][][] cannot be cast to ai.onnxruntime.OnnxTensor
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine.processStaticKVCacheInference(OnnxLLMEngine.kt:448)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine.access$processStaticKVCacheInference(OnnxLLMEngine.kt:21)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateTokens$2.invokeSuspend(OnnxLLMEngine.kt:383)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateTokens$2.invoke(Unknown Source:8)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateTokens$2.invoke(Unknown Source:4)
+                                                                                                    	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:61)
+                                                                                                    	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:163)
+                                                                                                    	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source:1)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine.generateTokens(OnnxLLMEngine.kt:326)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine.generateTokens$default(OnnxLLMEngine.kt:321)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateResponse$2.invokeSuspend(OnnxLLMEngine.kt:291)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateResponse$2.invoke(Unknown Source:8)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine$generateResponse$2.invoke(Unknown Source:4)
+                                                                                                    	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:61)
+                                                                                                    	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:163)
+                                                                                                    	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source:1)
+                                                                                                    	at com.memstory.llm.OnnxLLMEngine.generateResponse(OnnxLLMEngine.kt:280)
+                                                                                                    	at com.memstory.llm.LLMConversationService$generateResponse$2.invokeSuspend(LLMConversationService.kt:112)
+                                                                                                    	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+                                                                                                    	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+                                                                                                    	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+                                                                                                    	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+                                                                                                    	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:585)
+                                                                                                    	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:802)
+                                                                                                    	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:706)
+                                                                                                    	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:693)
+2025-08-30 18:18:40.624  2729-3092  OnnxLLMEngine           com.memstory                         D  EOS token generated: -1
+2025-08-30 18:18:40.624  2729-3092  OnnxLLMEngine           com.memstory                         D  === 🚀 STATIC KV CACHE END ===
+2025-08-30 18:18:40.624  2729-3092  OnnxLLMEngine           com.memstory                         D  Total generated tokens: 88
+2025-08-30 18:18:40.624  2729-3092  OnnxLLMEngine           com.memstory                         D  New tokens generated: 0
+2025-08-30 18:18:40.624  2729-3092  GemmaTokenizer          com.memstory                         D  Decoding 0 tokens
+2025-08-30 18:18:40.624  2729-3092  GemmaTokenizer          com.memstory                         D  Decoded text: 
+2025-08-30 18:18:40.625  2729-3092  OnnxLLMEngine           com.memstory                         D  Generation completed:
+                                                                                                    - Input tokens: 54
+                                                                                                    - Generated tokens: 0
+                                                                                                    - Total conversation tokens: 54
+                                                                                                    - KV cache size: 2.7421875MB
+2025-08-30 18:18:40.625  2729-3092  OnnxLLMEngine           com.memstory                         D  Response generated: 
+2025-08-30 18:18:40.625  2729-3092  LLMConversationService  com.memstory                         D  Generated response in 846ms: 

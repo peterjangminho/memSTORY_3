@@ -1,0 +1,185 @@
+2025-08-30 19:16:02.464 11553-11573 Manager                 com.memstory                         I  DeviceManager::DeviceManager
+2025-08-30 19:16:02.464 11553-11573 ServerFlag              com.memstory                         W  Failed to parse result of GetServerConfigurableFlag, errno=34
+2025-08-30 19:16:02.464 11553-11573 Manager                 com.memstory                         I  findAvailableDevices
+2025-08-30 19:16:02.465 11553-11573 HidlServiceManagement   com.memstory                         W  hwservicemanager is not supported on the device.
+2025-08-30 19:16:02.465 11553-11573 HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.3::IDevice without hwservicemanager
+2025-08-30 19:16:02.465 11553-11573 HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.2::IDevice without hwservicemanager
+2025-08-30 19:16:02.465 11553-11573 HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.1::IDevice without hwservicemanager
+2025-08-30 19:16:02.465 11553-11573 HidlServiceManagement   com.memstory                         I  Cannot list manifest for android.hardware.neuralnetworks@1.0::IDevice without hwservicemanager
+2025-08-30 19:16:03.048 11553-11627 ProfileInstaller        com.memstory                         D  Installing profile for com.memstory
+2025-08-30 19:16:05.871 11553-11573 OnnxLLMEngine           com.memstory                         D  ONNX model loaded with NNAPI execution provider (NPU acceleration)
+2025-08-30 19:16:05.871 11553-11573 OnnxLLMEngine           com.memstory                         D  🚀 Initializing Static KV Cache with System Prompt...
+2025-08-30 19:16:05.871 11553-11573 GemmaTokenizer          com.memstory                         D  Encoding text: You are memSTORY, the AI that understands your heart the best.
+                                                                                                    You live entirely on your phone, helping organize thoughts, memories, and ideas.
+                                                                                                    Always be warm, understanding, and helpful. You work completely offline.
+2025-08-30 19:16:05.871 11553-11573 GemmaTokenizer          com.memstory                         D  Encoded to 34 tokens
+2025-08-30 19:16:05.871 11553-11573 OnnxLLMEngine           com.memstory                         D  System prompt tokenized: 34 tokens
+2025-08-30 19:16:05.871 11553-11573 OnnxLLMEngine           com.memstory                         D  System prompt: You are memSTORY, the AI that understands your heart the best.
+                                                                                                    You live entirely on your phone, helping organize thoughts, memories, and ideas.
+                                                                                                    Always be warm, understanding, and helpful. You work completely offline.
+2025-08-30 19:16:05.892 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 0 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.899 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 1 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.903 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 2 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.906 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 3 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.910 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 4 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.914 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 5 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.917 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 6 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.922 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 7 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.926 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 8 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.930 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 9 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.934 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 10 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.938 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 11 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.941 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 12 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.945 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 13 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.951 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 14 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.955 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 15 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.958 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 16 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.962 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 17 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.966 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 18 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.969 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 19 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.973 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 20 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.976 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 21 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.979 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 22 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.983 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 23 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.986 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 24 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.990 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 25 KV Cache initialized: [1, 1, 512, 256]
+2025-08-30 19:16:05.990 11553-11573 OnnxLLMEngine           com.memstory                         D  🔥 Processing system prompt to initialize KV cache...
+2025-08-30 19:16:06.521 11553-11573 OnnxLLMEngine           com.memstory                         D  ✅ System prompt processed, KV cache populated with 34 tokens
+2025-08-30 19:16:06.521 11553-11573 OnnxLLMEngine           com.memstory                         D  Available outputs: 53
+2025-08-30 19:16:06.532 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[0]: Array
+2025-08-30 19:16:06.532 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[1]: Array
+2025-08-30 19:16:06.532 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[2]: Array
+2025-08-30 19:16:06.533 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[3]: Array
+2025-08-30 19:16:06.533 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[4]: Array
+2025-08-30 19:16:06.533 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[5]: Array
+2025-08-30 19:16:06.533 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[6]: Array
+2025-08-30 19:16:06.534 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[7]: Array
+2025-08-30 19:16:06.534 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[8]: Array
+2025-08-30 19:16:06.534 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[9]: Array
+2025-08-30 19:16:06.535 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[10]: Array
+2025-08-30 19:16:06.535 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[11]: Array
+2025-08-30 19:16:06.535 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[12]: Array
+2025-08-30 19:16:06.535 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[13]: Array
+2025-08-30 19:16:06.536 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[14]: Array
+2025-08-30 19:16:06.536 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[15]: Array
+2025-08-30 19:16:06.536 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[16]: Array
+2025-08-30 19:16:06.537 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[17]: Array
+2025-08-30 19:16:06.537 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[18]: Array
+2025-08-30 19:16:06.537 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[19]: Array
+2025-08-30 19:16:06.537 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[20]: Array
+2025-08-30 19:16:06.538 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[21]: Array
+2025-08-30 19:16:06.538 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[22]: Array
+2025-08-30 19:16:06.538 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[23]: Array
+2025-08-30 19:16:06.538 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[24]: Array
+2025-08-30 19:16:06.539 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[25]: Array
+2025-08-30 19:16:06.539 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[26]: Array
+2025-08-30 19:16:06.539 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[27]: Array
+2025-08-30 19:16:06.539 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[28]: Array
+2025-08-30 19:16:06.539 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[29]: Array
+2025-08-30 19:16:06.540 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[30]: Array
+2025-08-30 19:16:06.540 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[31]: Array
+2025-08-30 19:16:06.540 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[32]: Array
+2025-08-30 19:16:06.540 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[33]: Array
+2025-08-30 19:16:06.540 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[34]: Array
+2025-08-30 19:16:06.540 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[35]: Array
+2025-08-30 19:16:06.540 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[36]: Array
+2025-08-30 19:16:06.541 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[37]: Array
+2025-08-30 19:16:06.541 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[38]: Array
+2025-08-30 19:16:06.541 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[39]: Array
+2025-08-30 19:16:06.541 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[40]: Array
+2025-08-30 19:16:06.541 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[41]: Array
+2025-08-30 19:16:06.541 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[42]: Array
+2025-08-30 19:16:06.541 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[43]: Array
+2025-08-30 19:16:06.542 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[44]: Array
+2025-08-30 19:16:06.542 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[45]: Array
+2025-08-30 19:16:06.542 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[46]: Array
+2025-08-30 19:16:06.542 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[47]: Array
+2025-08-30 19:16:06.542 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[48]: Array
+2025-08-30 19:16:06.542 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[49]: Array
+2025-08-30 19:16:06.542 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[50]: Array
+2025-08-30 19:16:06.543 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[51]: Array
+2025-08-30 19:16:06.543 11553-11573 OnnxLLMEngine           com.memstory                         D    Output[52]: Array
+2025-08-30 19:16:06.543 11553-11573 OnnxLLMEngine           com.memstory                         D  First output type: OnnxTensor
+2025-08-30 19:16:06.543 11553-11573 OnnxLLMEngine           com.memstory                         D  Logits extracted as OnnxTensor, shape: [1, 34, 262144]
+2025-08-30 19:16:06.545 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 0 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.548 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 0 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.548 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 0 KV cache updated via array conversion (indices: 1, 2)
+2025-08-30 19:16:06.551 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 1 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.553 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 1 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.553 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 1 KV cache updated via array conversion (indices: 3, 4)
+2025-08-30 19:16:06.556 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 2 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.558 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 2 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.558 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 2 KV cache updated via array conversion (indices: 5, 6)
+2025-08-30 19:16:06.561 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 3 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.563 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 3 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.563 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 3 KV cache updated via array conversion (indices: 7, 8)
+2025-08-30 19:16:06.568 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 4 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.570 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 4 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.570 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 4 KV cache updated via array conversion (indices: 9, 10)
+2025-08-30 19:16:06.573 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 5 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 546, 256]
+2025-08-30 19:16:06.576 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 5 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 546, 256]
+2025-08-30 19:16:06.576 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 5 KV cache updated via array conversion (indices: 11, 12)
+2025-08-30 19:16:06.579 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 6 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.581 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 6 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.581 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 6 KV cache updated via array conversion (indices: 13, 14)
+2025-08-30 19:16:06.584 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 7 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.586 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 7 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.586 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 7 KV cache updated via array conversion (indices: 15, 16)
+2025-08-30 19:16:06.589 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 8 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.591 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 8 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.591 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 8 KV cache updated via array conversion (indices: 17, 18)
+2025-08-30 19:16:06.593 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 9 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.596 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 9 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.596 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 9 KV cache updated via array conversion (indices: 19, 20)
+2025-08-30 19:16:06.598 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 10 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.601 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 10 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.601 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 10 KV cache updated via array conversion (indices: 21, 22)
+2025-08-30 19:16:06.603 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 11 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 546, 256]
+2025-08-30 19:16:06.606 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 11 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 546, 256]
+2025-08-30 19:16:06.606 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 11 KV cache updated via array conversion (indices: 23, 24)
+2025-08-30 19:16:06.608 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 12 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.610 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 12 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.610 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 12 KV cache updated via array conversion (indices: 25, 26)
+2025-08-30 19:16:06.613 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 13 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.615 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 13 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.615 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 13 KV cache updated via array conversion (indices: 27, 28)
+2025-08-30 19:16:06.618 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 14 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.620 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 14 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.620 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 14 KV cache updated via array conversion (indices: 29, 30)
+2025-08-30 19:16:06.622 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 15 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.625 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 15 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.625 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 15 KV cache updated via array conversion (indices: 31, 32)
+2025-08-30 19:16:06.627 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 16 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.630 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 16 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.630 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 16 KV cache updated via array conversion (indices: 33, 34)
+2025-08-30 19:16:06.633 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 17 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 546, 256]
+2025-08-30 19:16:06.635 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 17 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 546, 256]
+2025-08-30 19:16:06.635 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 17 KV cache updated via array conversion (indices: 35, 36)
+2025-08-30 19:16:06.638 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 18 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.640 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 18 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.640 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 18 KV cache updated via array conversion (indices: 37, 38)
+2025-08-30 19:16:06.643 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 19 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.647 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 19 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.647 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 19 KV cache updated via array conversion (indices: 39, 40)
+2025-08-30 19:16:06.650 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 20 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.652 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 20 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.652 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 20 KV cache updated via array conversion (indices: 41, 42)
+2025-08-30 19:16:06.655 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 21 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.658 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 21 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.658 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 21 KV cache updated via array conversion (indices: 43, 44)
+2025-08-30 19:16:06.660 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 22 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.663 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 22 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.663 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 22 KV cache updated via array conversion (indices: 45, 46)
+2025-08-30 19:16:06.665 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 23 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 546, 256]
+2025-08-30 19:16:06.668 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 23 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 546, 256]
+2025-08-30 19:16:06.668 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 23 KV cache updated via array conversion (indices: 47, 48)
+2025-08-30 19:16:06.670 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 24 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.673 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 24 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.673 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 24 KV cache updated via array conversion (indices: 49, 50)
+2025-08-30 19:16:06.675 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 25 key converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.677 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 25 value converted from Array<Array<Array<FloatArray>>> to OnnxTensor, shape: [1, 1, 512, 256]
+2025-08-30 19:16:06.677 11553-11573 OnnxLLMEngine           com.memstory                         V  Layer 25 KV cache updated via array conversion (indices: 51, 52)
+2025-08-30 19:16:06.677 11553-11573 OnnxLLMEngine           com.memstory                         D  🚀 Static KV Cache initialized successfully
+2025-08-30 19:16:06.677 11553-11573 OnnxLLMEngine           com.memstory                         D  LLM Engine initialization completed
+2025-08-30 19:16:06.677 11553-11573 LLMConversationService  com.memstory                         D  LLM Service initialized successfully
+2025-08-30 19:16:06.677 11553-11573 LLMConversationService  com.memstory                         D  ✅ LLM warm-up completed successfully in 8788ms
